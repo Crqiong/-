@@ -25,8 +25,9 @@ header>.seach{
 	border: 1px solid #ccc;
 }
 header>.seach>input{
-	padding: 5px 10px;
-	font-size: 20px;
+	width: 240px;
+	padding: 10px 10px;
+	font-size: 13px;
 	height: 100%;
 	outline: none;
 	border: 0;
