@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding:0px;
+			}
+			a{
+				text-decoration: none;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			header{
+				width: 1000px;
+				height: 80px;
+				margin: 0 auto;
+				/* background-color: light#009af3; */
+			}
+			header>h1{
+				display: inline-block;
+				float: left;
+				margin-top: 20px;
+			}
+			header>h1>a>img{
+				display: block;
+			}
+			header>.seach{
+				margin-left: 45px;
+				margin-top: 20px;
+				background: white;
+				float: left;
+				border: 1px solid #ccc;
+			}
+			header>.seach>input{
+				width: 240px;
+				padding: 10px 10px;
+				font-size: 13px;
+				height: 100%;
+				outline: none;
+				border: 0;
+				float: left;
+			}
+			header>.seach>span{
+				padding: 8px 7px;
+				display: inline-block;
+				cursor: pointer;
+			}
+			header>.seach>span:hover{
+				color: #009af3;
+			}
+			header>ul{
+				float: right;
+				margin-right: 70px;
+				margin-top: 25px;
+				box-sizing: border-box;
+			}
+			header>ul>li{
+				float: left;
+				list-style: none;
+				margin-top: 7px;
+				padding-right:20px;
+				font-size: 13px;
+			}
+			header>ul>li>a{
+				color: #777;
+				text-decoration: none;
+			}
+			header>ul>li>a:hover{
+				color: #009af3;
+			}
+			header>ul>a{
+				display: inline-block;
+				background: #009af3;
+				border-radius: 2px;
+				padding: 7px 12px;
+				font-size: 13px;
+				margin-left: 25px;
+				color: white;
+				text-decoration: none;
+				float: left;
+			}
+			header>ul>a:hover{
+				color: #fff;
+				/* border: 1px solid #158fe1; */
+				background-color: #158fe1;
+			}
+			
+			
+			
+			/* 中部 */
+			container{
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			/* 中部导航栏 */
+			container>.head{
+				width: 100%;
+				min-width: 1000px;
+				height: 50px;
+				background: #2c323b;
+			}
+			container>.head>.head_nav{
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+			
+			}
+			container>.head>.head_nav>.left{
+				float: left;
+			}
+			container>.head>.head_nav>ul>li{
+				list-style: none;
+				float: left;
+			}
+			container>.head>.head_nav>.left>li:hover{
+				background: #009af3;
+			}
+			container>.head>.head_nav>.left>.more>a{
+				line-height: normal;
+				margin: 15px 0 14px 0;
+			}
+			container>.head>.head_nav>.left>li a{
+				display: inline-block;
+				line-height: 50px;
+				padding: 0 30px;
+				color: #ddd;
+				text-decoration: none;
+			}
+			container>.head>.head_nav>.left>.more:hover>a>.xiajiantou{
+				transform: rotate(180deg);
+				/* background: red; */
+			}
+			container>.head>.head_nav>.left>.more:hover>ul{
+				display: block;
+			}
+			container>.head>.head_nav>.left>.more{
+				position: relative;
+			}
+			container>.head>.head_nav>.left>.more>ul{
+				background: #2c323b;
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+			container>.head>.head_nav>.left>.more>ul>li{
+				list-style: none;
+				text-align: center;
+			}
+			container>.head>.head_nav>.left>.more>ul>li>a{
+				line-height: 35px;
+				width: 52px;
+				color: #bbb;
+			}
+			container>.head>.head_nav>.left>.more>ul>li:hover>a{
+				background: #4c5968;
+				color: white;
+			}
+			container>.head>.head_nav>.right{
+				float: right;
+			}
+			container>.head>.head_nav>.right>li{
+				list-style: none;
+				margin-left: 30px;
+				line-height: 50px;
+				font-size: 14px;
+			}
+			container>.head>.head_nav>.right>li>a{
+				color: #bbb;
+				text-decoration: none;
+			}
+			container>.head>.head_nav>.right>li>a:hover{
+				color: #009AF3;
+			}
+			.frame{
+				width:1000px;
+				margin:0 auto;
+			}
+			.frame>.picchangbox{
+				float: left;
+				width: 663px;
+				height: 321px;
+				margin: 20px 0 0 0;
+				position: relative;
+				overflow: hidden;
+			}
+			.frame>.picchangbox>ul{
+				width: 4641px;
+			}
+			.frame>.picchangbox>ul>li{
+				width: 663px;
+				height: 325px;
+				float: left;
+				list-style: none;
+			}
+			.frame>.picchangbox>ul>li>a>img{
+				width: 663px;
+				height:325px;
+			}
+			.frame>.picchangbox>#pic_point{
+				width: 100%;			
+				position: absolute;
+				bottom:0px;
+				padding:5px 10px;
+				background:rgba(0,0,0,0.6);
+			}
+			.frame>.picchangbox>#pic_point>.titles>p{
+				background:rgba(0,0,0,0);
+				float: left;
+				display: none;
+			}
+			.frame>.picchangbox>#pic_point>.titles>p>a{
+				color: white;
+				line-height: 30px;
+			}
+			.frame>.picchangbox>#pic_point>.titles>p>em{
+				margin-left: 6px;
+				position: absolute;
+				top: 10px;
+			}
+			.frame>.picchangbox>#pic_point>.points{
+				float: right;
+				margin-right:10px
+			}
+			.frame>.picchangbox>#pic_point>.points>li{
+				width:10px;
+				height:10px;
+				background:white;
+				float: left;
+				margin-right:10px;
+				margin-top: 10px;
+				list-style: none;
+				border-radius: 50%;
+			}
+			.frame>.mvhotlist{
+				width: 317px;
+				height: 325px;
+				float: right;
+				background: aliceblue;
+				margin: 16px 0 0 0;
+				overflow: hidden;
+			}
+			.frame>.mvhotlist>h3{
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+			}
+			.frame>.mvhotlist>h3 span {
+				float: left;
+				width: 219px;
+				padding: 0 0 0 15px;
+				margin: 0 1px 0 0;
+				background: #deb200;
+				color: #FFF;
+				font-weight: normal;
+			}
+			.frame>.mvhotlist>h3 a{
+				width: 82px;
+				float: left;
+				font-weight: normal;
+				color: #fff;
+				background-color: #363636;
+				text-align: center;
+			}
+			.frame>.mvhotlist ul{
+				background: #363636;
+				margin: 2px 0 0 0;
+				height: 293px;
+				overflow: hidden;
+			}
+			.mvhotlist ul li {
+				height: 29px;
+				line-height: 29px;
+				list-style:none;
+			}
+			.mvhotlist ul li a{
+				height: 29px;
+				display: block;
+				line-height: 32px;
+				cursor: pointer;
+				padding-left: 3px;
+				color: white;
+				font-size: 14px;
+			}
+			.mvhotlist>ul>li>a span{
+				display: inline-block;
+				width: 37px;
+				height: 29px;
+				background: url(../img-radio/bg.png);
+				background-repeat: no-repeat;
+			}
+			.mvhotlist>ul>li>a>span.one {
+				background-position: -336px -218px;
+			}
+			.mvhotlist>ul>li>a>span.two {
+				background-position: -336px -247px;;
+			}
+			.mvhotlist>ul>li>a>span.three {
+				background-position: -336px -276px;;
+			}
+			.mvhotlist>ul>li>a>span.four {
+				background-position: -336px -305px;;
+			}
+			.mvhotlist>ul>li>a>span.five {
+				background-position: -336px -334px;;
+			}
+			.mvhotlist>ul>li>a>span.six {
+				background-position: -336px -363px;;
+			}
+			.mvhotlist>ul>li>a>span.seven {
+				background-position: -336px -392px;;
+			}
+			.mvhotlist>ul>li>a>span.eight {
+				background-position: -336px -421px;;
+			}
+			.mvhotlist>ul>li>a>span.nine {
+				background-position: -336px -450px;;
+			}
+			.mvhotlist>ul>li>a>span.ten {
+				background-position: -336px -479px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.one {
+				background-position: -296px -218px;
+			}
+			.mvhotlist>ul>li:hover>a>span.two {
+				background-position: -296px -247px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.three {
+				background-position: -296px -276px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.four {
+				background-position: -296px -305px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.five {
+				background-position: -296px -334px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.six {
+				background-position: -296px -363px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.seven {
+				background-position: -296px -392px;
+			}
+			.mvhotlist>ul>li:hover>a>span.eight {
+				background-position: -296px -421px;
+			}
+			.mvhotlist>ul>li:hover>a>span.nine {
+				background-position: -296px -450px;;
+			}
+			.mvhotlist>ul>li:hover>a>span.ten {
+				background-position: -296px -479px;;
+			}
+			.mvhotlist ul a:hover {
+				background:#959595;
+			}
+			.mvhotlist>ul>li>a>span.name{
+				width: 220px;
+				background: #363636;
+				overflow: hidden;
+				text-overflow: ellipsis;/* 超出省略号 */
+				white-space:nowrap; /* 强制一行显示 */
+			}
+			.mvhotlist>ul>li:hover>a>span.name{
+				background:#959595;
+			}
+			.mvhotlist>ul>li>a>em{
+				display: none;
+			}
+			.mvhotlist>ul>li:hover>a>em{
+				display:inline-block;
+			}
+			.frame>.mv_menu{
+				width: 1000px;
+				margin: 18px 0 0 0;
+				float: left;
+			}
+			.frame>.mv_menu>.mvcaleft{
+				width: 210px;
+				float: left;
+				position: relative;
+				z-index: 1;
+			}
+			.frame>.mv_menu>.mvcaleft>.ca{
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				background-color: #cfcfcf;
+				font-size: 16px;
+				color: #fff;
+				font-weight: normal;
+			}
+			.frame>.mv_menu>.mvcaright{
+				width: 780px;
+				float: right;
+				position: relative;
+				z-index: 2;
+			}
+			.frame>.mv_menu>.mvcaright>h2{
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				background-color: #cfcfcf;
+				font-size: 16px;
+				color: #fff;
+				font-weight: normal;
+				display: none;
+			}
+			.frame>.mv_menu>.leftCon{
+				width: 210px;
+				position: relative;
+				/* overflow: hidden; */
+				padding: 10px 0px 0 0;
+				float: left;				
+			}
+			.frame>.mv_menu>.leftCon>ul>li{
+				width: 210px;
+				height: 36px;
+				line-height: 36px;
+				display: block;
+				color: #555;
+				text-align: center;
+				font-size: 14px;
+			}
+			.frame>.mv_menu>.mvlist{
+				width: 780px;
+				float: right;
+				margin-top: 10px;
+				position: relative;
+			}
+			.frame>.mv_menu>.mvlist>div{
+				width: 780px;
+				display: none;
+				position: relative;
+			}
+			.frame>.mv_menu>.mvlist>div>ul{
+				position: relative;
+				width: 800px;
+				padding-top: 10px;
+			}
+			.frame>.mv_menu>.mvlist>div>ul>li{
+				width: 140px;
+				height: 110px;
+				float: left;
+				display: inline;
+				margin: 0px 20px 10px 0px;
+				position: relative;
+			}
+			.frame>.mv_menu>.mvlist>div>ul>li>a>img{
+				width: 140px;
+				height: 78px;
+				border-radius:6px;
+			}
+			.frame>.mv_menu>.mvlist>div>ul>li>p{
+				    color: #555;
+				    height: 20px;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    display: block;
+				    white-space: nowrap;
+				    width: 124px;
+				    margin: 5px 0 0 3px;
+				    font-size: 12px;
+				    font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+				    font-size: 14px;
+			}
+			.frame>.mv_menu>.mvlist em{
+				position: absolute;
+				bottom: 36px;
+				right: 14px;
+			}
+			.footer{
+				width: 100%;
+				margin: 50px auto 0 auto;
+				background: #2c323b;
+				float: left;
+			}
+			.footer>.footer-top{
+				height: 20px;
+				width: 100%;
+				text-align: center;
+				padding: 10px 0;
+				border-bottom: 1px solid gray;
+			}
+			.footer>.footer-top>ul{
+				min-width: 1000px;
+				margin: 0 auto;
+				display: inline-block;
+			}
+			.footer>.footer-top>ul>li{				
+				float: left;
+				list-style:none;
+				line-height: 12px;
+				padding: 0 13px;				
+				border-left: 1px solid white;
+			}
+			.footer>.footer-top>ul>li>a{
+				text-decoration: none;
+				color: #b1b3b9;
+				font-size: 12px;
+				text-align: center;
+				padding: 2px 5px;
+			}
+			.footer>.footer-top>ul>li:hover>a{
+				color: dodgerblue;
+			}
+			.footer>.links{
+				margin: 0 auto;
+				position: relative;
+				zoom: 1;
+				border-bottom: 1px solid #3d424a;
+				padding: 40px 0px;
+				font-size: 12px;
+				color: #b1b3b9;
+				text-align: center;		
+			}
+			.footer>.links>p{
+				width: 1000px;
+				display: inline-block;
+				line-height: 30px;
+				text-align: center;
+				color: #b1b3b9;
+			}
+			.footer>.links>p a{
+				text-decoration: none;
+				color:#b1b3b9;
+			}
+			.footer>.links>p>a:hover{
+				color:dodgerblue ;
+			}
+		</style>
+		<script src="../js/jquery-3.5.1.js"></script>
+		<script src="../js/vue.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	</head>
+	<body>
+		<header>
+			<!-- 背景图logo -->
+			<h1><a href=""><img src="../img-radio/logo.png" alt=""></a></h1>
+			<!-- 搜索框 -->
+			<div class="seach">
+				<input type="text" name="" id=""><span class="iconfont icon-magnifier"></span>
+			</div>
+			<!-- 列表 -->
+			<ul>
+				<li><a href="">客服中心</a></li>
+				<li><a href="">招贤纳士</a></li>
+				<li><a href="">会员中心</a></li>
+				<li style="border-right: 1px solid #CCCCCC;"><a href="">商务合作</a></li>
+				<a href="">登录</a>
+			</ul>
+		</header>
+		<container>
+			<div class="head">
+				<div class="head_nav">
+					<ul class="left">
+						<li><a href="..index.html">首页</a></li>
+						<li><a href="">榜单</a></li>
+						<li><a href="">下载客户端</a></li>
+						<li class="more">
+							<a href="">更多&nbsp;<span class="iconfont icon-xiajiantou xiajiantou" style="display: inline-block;"></span></a>
+							<ul>
+								<li><a href="">电台</a></li>
+								<li><a href="">MV&nbsp;</a></li>
+								<li><a href="">歌单</a></li>
+								<li><a href="">歌手</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="right">
+						<li><a href=""><span class="iconfont icon-xingxing"></span>&nbsp;直播</a></li>
+						<li><a href=""><span class="iconfont icon-shangcheng"></span>&nbsp;商城</a></li>
+						<li><a href=""><span class="iconfont icon-erji"></span>&nbsp;音乐人</a></li>
+						<li><a href=""><span class="iconfont icon-dianpu"></span>&nbsp;代理商</a></li>
+						<li><a href=""><span class="iconfont icon-maikefeng"></span>&nbsp;主播电台</a></li>
+						<li><a href=""><span class="iconfont icon-pintu"></span>&nbsp;开放平台</a></li>
+					</ul>
+				</div>
+			</div>
+		</container>
+		<div class="frame">
+			<div class="picchangbox">
+				<ul id="change">
+					<li>
+						<a href=""><img src="../img-radio/change01.jpg" ></a>
+					</li>
+					<li>
+						<a href=""><img src="../img-radio/change02.jpg" ></a>
+					</li>
+					<li>
+						<a href=""><img src="../img-radio/change03.jpg" ></a>
+					</li>
+					<li>
+						<a href=""><img src="../img-radio/change04.jpg" ></a>
+					</li>
+					<li>
+						<a href=""><img src="../img-radio/change05.jpg" ></a>
+					</li>
+					<li>
+						<a href=""><img src="../img-radio/change06.jpg" ></a>
+					</li>
+					<li>
+						<a href=""><img src="../img-radio/change01.jpg" ></a>
+					</li>
+				</ul>
+				<ul id="pic_point">
+					<div class="titles">
+						<p style="display: block;"><a href="">Ed Sheeran - Afterglow</a><em></em></p>
+						<p><a href="">叶洛洛 - 词牌名</a><em></em></p>
+						<p><a href="">吴青峰 - 沙滩上的佛洛一德</a><em></em></p>
+						<p><a href="">徐佳莹 - 不舍 (《斗罗大陆》动画片尾曲)</a><em></em></p>
+						<p><a href="">张靓颖、摩登兄弟刘宇宁 - 无华 (《有翡》电视剧片尾主题曲)</a><em></em></p>
+						<p><a href="">时代少年团 - 晴雅集 (《晴雅集》电影同名宣传推广曲)</a><em></em></p>
+					</div>
+					<div class="points">
+						<li style="background:skyblue;"></li>
+						<li></li>+
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</div>					
+				</ul>
+			</div>
+			<div class="mvhotlist">
+				<h3>
+					<span>MV热播总排行</span>
+					<a href="">更多</a>
+				</h3>
+				<ul>
+					<li><a href=""><span class="one"></span><span class="name">文轩音乐 - 回小仙《醒不来的梦》，全智贤美的不可方物，是我们醒不来的梦！</span><em></em></a></li>
+					<li><a href=""><span class="two"></span><span class="name">上官阿俊 - 踏山河</span><em></em></a></li>
+					<li><a href=""><span class="three"></span><span class="name">海来阿木 - 不过人间</span><em></em></a></li>
+					<li><a href=""><span class="four"></span><span class="name">上官阿俊 - 醒不来的梦—回小仙</span><em></em></a></li>
+					<li><a href=""><span class="five"></span><span class="name">雨你同行 - 李昕融现场版高清视频《听我说谢谢你》声线优美！柔美动听！</span><em></em></a></li>
+					<li><a href=""><span class="six"></span><span class="name">徐佳莹 - 不舍</span><em></em></a></li>
+					<li><a href=""><span class="seven"></span><span class="name">秋水落眉弯 - 《踏山河》澜和蔡文姬这是什么神仙虐恋，太好哭了吧！</span><em></em></a></li>
+					<li><a href=""><span class="eight"></span><span class="name">音乐驿站 - 小哥哥实力翻唱「踏山河」这腔调配上神仙颜值，真是绝了！</span><em></em></a></li>
+					<li><a href=""><span class="nine"></span><span class="name">雨子音乐 - 二小姐《有没有一种思念永不疲惫》爱到最后只剩眼泪在雨中纷飞！</span><em></em></a></li>
+					<li><a href=""><span class="ten"></span><span class="name">Alina - 徐佳莹《不舍》，小舞无奈献祭，留住诀别的身影令人无限悲恸</span><em></em></a></li>
+				</ul>
+			</div>			
+			<div class="mv_menu">
+				<div class="mvcaleft">
+					<h2 class="ca">MV分类</h2>
+				</div>
+				<div class="mvcaright" id="mvcaright">
+					<h2 style="display: block;">新歌推荐(2000个)</h2>
+					<h2>华语精选(2000个)</h2>
+					<h2>日韩精选(2000个)</h2>
+					<h2>欧美精选(2000个)</h2>
+				</div>
+				<div class="leftCon">
+					<ul id="leftCon">
+						<li style="background: lightblue;">新歌推荐</li>
+						<li>华语精选</li>
+						<li>日韩精选</li>
+						<li>欧美精选</li>
+					</ul>
+				</div>
+				<div class="mvlist" id="mvlist">
+					<div style="display: block;">
+						<ul>
+							<li v-for="(v,i) in all">
+								<a href="" ><img v-bind:src="v.src" alt=""></a>
+								<p>{{v.text}}</p>
+								<em></em>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li v-for="(v,i) in chinese">
+								<a href="" ><img v-bind:src="v.src" alt=""></a>
+								<p>{{v.text}}</p>
+								<em></em>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li v-for="(v,i) in jsk">
+								<a href="" ><img v-bind:src="v.src" alt=""></a>
+								<p>{{v.text}}</p>
+								<em></em>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li v-for="(v,i) in ea">
+								<a href="" ><img v-bind:src="v.src" alt=""></a>
+								<p>{{v.text}}</p>
+								<em></em>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-top">
+				<ul>
+					<li style="border-left: 1px solid #2c323b;"><a href="">关于酷狗</a></li>
+					<li><a href="">监督举报</a></li>
+					<li><a href="">商务合作</a></li>
+					<li><a href="">广告服务</a></li>
+					<li><a href="">投诉指引</a></li>
+					<li><a href="">隐私政策</a></li>
+					<li><a href="">儿童隐私</a></li>
+					<li><a href="">用户服务协议</a></li>
+					<li><a href="">酷狗音乐人</a></li>
+					<li><a href="">酷狗直通车</a></li>
+					<li><a href="">招聘信息</a></li>
+					<li><a href="">客服中心</a></li>
+					<li><a href="">用户体验计划</a></li>
+				</ul>
+			</div>
+			<div class="links">
+				<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+				<p>信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339&nbsp;&nbsp;&nbsp;<a href="">粤ICP备09017694号</a><span><a href=""><img src="../img-radio/footer_icon.png" ></a></span></p>
+				<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026&nbsp;&nbsp;&nbsp;<a href="">营业执照</a></p>
+				<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018 <a href="">粤公网安备 44010602000141号</a><span><a href=""><img src="./../img-radio/icon_yuewangga1.png" ></a></span></p>
+				<p><a href="">互联网不良信息举报中心：www.12377.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;酷狗不良信息举报邮箱：jubao_music@kugou.net&nbsp;&nbsp;&nbsp;&nbsp;客服邮箱：kefu@kugou.com</p>
+				<p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2020 KuGou-Inc.All Rights Reserved</p>
+			</div>
+		</div>
+		<script>
+			var i=0;
+			var index=0;
+			timer=null;    
+			function fn(){
+				i++;
+				if(i==3978){
+					i=0;
+				}
+				var num=parseInt(i/663);
+				console.log(num);
+				$("#change").animate({"margin-left":-i+"px"},0);
+				$("#pic_point>div>li").eq(num).css("background","skyblue").siblings().css("background","white");
+				$("#pic_point>div>p").eq(num).css("display","block").siblings().css("display","none");
+			}
+			timer=setInterval(fn,4);
+			$("#change").mouseover(function(){
+				clearInterval(timer);
+			})
+			$("#change").mouseout(function(){
+				timer=setInterval(fn,4);		
+			})       //定时器的停止和继续
+			$("em").html("<img src=../img-radio/play_icon.png>");
+			
+			$("#leftCon>li").click(function(){
+				index=$(this).index();
+				$(this).css("background","lightblue").siblings().css("background","white");
+				$("#mvcaright>h2").eq($(this).index()).show().siblings("#mvcaright>h2").hide();
+				$("#mvlist>div").eq($(this).index()).show().siblings("#mvlist>div").hide();
+			})
+			new Vue({
+				el:"#mvlist",
+				data:{
+					all:[{
+						src:"../img-radio/mv1.jpg",
+						text:"林俊杰 - 修炼爱情"
+					},{
+						src:"../img-radio/mv2.jpg",
+						text:"单依纯 - 永不失联的爱"
+					},{
+						src:"../img-radio/mv3.jpg",
+						text:"Katy Perry - Not the End of the World"
+					},{
+						src:"../img-radio/mv4.jpg",
+						text:"Ed Sheeran - Afterglow"
+					},{
+						src:"../img-radio/mv5.jpg",
+						text:"白举纲、马伯骞 - 猎狐行动"
+					},{
+						src:"../img-radio/mv6.jpg",
+						text:"吴青峰 - 沙滩上的佛洛一德"
+					},{
+						src:"../img-radio/mv7.jpg",
+						text:"林俊杰、王嘉尔 - 过"
+					},{
+						src:"../img-radio/mv8.jpg",
+						text:"周深 - 江湖觅知音"
+					},{
+						src:"../img-radio/mv9.jpg",
+						text:"汪苏泷 - 灵猫传"
+					},{
+						src:"../img-radio/mv10.jpg",
+						text:"张杰 - 跃进人海拥抱你"
+					},{
+						src:"../img-radio/mv11.jpg",
+						text:"叶洛洛 - 词牌名"
+					},{
+						src:"../img-radio/mv12.jpg",
+						text:"R3hab - Ones You Miss"
+					},{
+						src:"../img-radio/mv13.jpg",
+						text:"匈牙利国家合唱团、张申骋 - 楚歌：九月深秋兮四野飞霜"
+					},{
+						src:"../img-radio/mv14.jpg",
+						text:"Eminem - GNAT"
+					},{
+						src:"../img-radio/mv15.jpg",
+						text:"张靓颖、摩登兄弟刘宇宁 - 无华"
+					},{
+						src:"../img-radio/mv16.jpg",
+						text:"Jason Mraz - Christmas in Quarantine"
+					},{
+						src:"../img-radio/mv17.jpg",
+						text:"张贤胜 - I Just Can't Stop Loving You"
+					},{
+						src:"../img-radio/mv18.jpg",
+						text:"24KGoldn、DaBaby - Coco"
+					},{
+						src:"../img-radio/mv19.jpg",
+						text:"林俊杰 - 最好是"
+					},{
+						src:"../img-radio/mv20.jpg",
+						text:"SUPER JUNIOR - SUPER JUNIOR The 10th Album #2《Burn The Floor》Performance Video"
+					}],
+					chinese:[{
+						src:"../img-radio/mv2.jpg",
+						text:"林俊杰 - 修炼爱情"
+					},{
+						src:"../img-radio/mv3.jpg",
+						text:"单依纯 - 永不失联的爱"
+					},{
+						src:"../img-radio/mv1.jpg",
+						text:"Katy Perry - Not the End of the World"
+					},{
+						src:"../img-radio/mv6.jpg",
+						text:"Ed Sheeran - Afterglow"
+					},{
+						src:"../img-radio/mv4.jpg",
+						text:"白举纲、马伯骞 - 猎狐行动"
+					},{
+						src:"../img-radio/mv5.jpg",
+						text:"吴青峰 - 沙滩上的佛洛一德"
+					},{
+						src:"../img-radio/mv9.jpg",
+						text:"林俊杰、王嘉尔 - 过"
+					},{
+						src:"../img-radio/mv8.jpg",
+						text:"周深 - 江湖觅知音"
+					},{
+						src:"../img-radio/mv7.jpg",
+						text:"汪苏泷 - 灵猫传"
+					},{
+						src:"../img-radio/mv10.jpg",
+						text:"张杰 - 跃进人海拥抱你"
+					},{
+						src:"../img-radio/mv11.jpg",
+						text:"叶洛洛 - 词牌名"
+					},{
+						src:"../img-radio/mv12.jpg",
+						text:"R3hab - Ones You Miss"
+					},{
+						src:"../img-radio/mv13.jpg",
+						text:"匈牙利国家合唱团、张申骋 - 楚歌：九月深秋兮四野飞霜"
+					},{
+						src:"../img-radio/mv14.jpg",
+						text:"Eminem - GNAT"
+					},{
+						src:"../img-radio/mv15.jpg",
+						text:"张靓颖、摩登兄弟刘宇宁 - 无华"
+					},{
+						src:"../img-radio/mv16.jpg",
+						text:"Jason Mraz - Christmas in Quarantine"
+					},{
+							src:"../img-radio/mv17.jpg",
+							text:"张贤胜 - I Just Can't Stop Loving You"
+						},{
+							src:"../img-radio/mv18.jpg",
+							text:"24KGoldn、DaBaby - Coco"
+						},{
+							src:"../img-radio/mv19.jpg",
+							text:"林俊杰 - 最好是"
+						},{
+							src:"../img-radio/mv20.jpg",
+							text:"SUPER JUNIOR - SUPER JUNIOR The 10th Album #2《Burn The Floor》Performance Video"
+					}],
+					jsk:[{
+						src:"../img-radio/mv20.jpg",
+							text:"林俊杰 - 修炼爱情"
+						},{
+							src:"../img-radio/mv19.jpg",
+							text:"单依纯 - 永不失联的爱"
+						},{
+							src:"../img-radio/mv18.jpg",
+							text:"Katy Perry - Not the End of the World"
+						},{
+							src:"../img-radio/mv17.jpg",
+							text:"Ed Sheeran - Afterglow"
+						},{
+							src:"../img-radio/mv16.jpg",
+							text:"白举纲、马伯骞 - 猎狐行动"
+						},{
+							src:"../img-radio/mv15.jpg",
+							text:"吴青峰 - 沙滩上的佛洛一德"
+						},{
+							src:"../img-radio/mv14.jpg",
+							text:"林俊杰、王嘉尔 - 过"
+						},{
+							src:"../img-radio/mv13.jpg",
+							text:"周深 - 江湖觅知音"
+						},{
+							src:"../img-radio/mv12.jpg",
+							text:"汪苏泷 - 灵猫传"
+						},{
+							src:"../img-radio/mv11.jpg",
+							text:"张杰 - 跃进人海拥抱你"
+						},{
+							src:"../img-radio/mv10.jpg",
+							text:"叶洛洛 - 词牌名"
+						},{
+							src:"../img-radio/mv9.jpg",
+							text:"R3hab - Ones You Miss"
+						},{
+							src:"../img-radio/mv8.jpg",
+							text:"匈牙利国家合唱团、张申骋 - 楚歌：九月深秋兮四野飞霜"
+						},{
+							src:"../img-radio/mv7.jpg",
+							text:"Eminem - GNAT"
+						},{
+							src:"../img-radio/mv6.jpg",
+							text:"张靓颖、摩登兄弟刘宇宁 - 无华"
+						},{
+							src:"../img-radio/mv5.jpg",
+							text:"Jason Mraz - Christmas in Quarantine"
+						},{
+							src:"../img-radio/mv4.jpg",
+							text:"张贤胜 - I Just Can't Stop Loving You"
+						},{
+							src:"../img-radio/mv3.jpg",
+							text:"24KGoldn、DaBaby - Coco"
+						},{
+							src:"../img-radio/mv2.jpg",
+							text:"林俊杰 - 最好是"
+						},{
+							src:"../img-radio/mv1.jpg",
+							text:"SUPER JUNIOR - SUPER JUNIOR The 10th Album #2《Burn The Floor》Performance Video"						
+					}],
+					ea:[{
+						src:"../img-radio/mv10.jpg",
+							text:"林俊杰 - 修炼爱情"
+						},{
+							src:"../img-radio/mv12.jpg",
+							text:"单依纯 - 永不失联的爱"
+						},{
+							src:"../img-radio/mv13.jpg",
+							text:"Katy Perry - Not the End of the World"
+						},{
+							src:"../img-radio/mv14.jpg",
+							text:"Ed Sheeran - Afterglow"
+						},{
+							src:"../img-radio/mv15.jpg",
+							text:"白举纲、马伯骞 - 猎狐行动"
+						},{
+							src:"../img-radio/mv16.jpg",
+							text:"吴青峰 - 沙滩上的佛洛一德"
+						},{
+							src:"../img-radio/mv17.jpg",
+							text:"林俊杰、王嘉尔 - 过"
+						},{
+							src:"../img-radio/mv18.jpg",
+							text:"周深 - 江湖觅知音"
+						},{
+							src:"../img-radio/mv19.jpg",
+							text:"汪苏泷 - 灵猫传"
+						},{
+							src:"../img-radio/mv20.jpg",
+							text:"张杰 - 跃进人海拥抱你"
+						},{
+							src:"../img-radio/mv1.jpg",
+							text:"叶洛洛 - 词牌名"
+						},{
+							src:"../img-radio/mv2.jpg",
+							text:"R3hab - Ones You Miss"
+						},{
+							src:"../img-radio/mv3.jpg",
+							text:"匈牙利国家合唱团、张申骋 - 楚歌：九月深秋兮四野飞霜"
+						},{
+							src:"../img-radio/mv4.jpg",
+							text:"Eminem - GNAT"
+						},{
+							src:"../img-radio/mv5.jpg",
+							text:"张靓颖、摩登兄弟刘宇宁 - 无华"
+						},{
+							src:"../img-radio/mv6.jpg",
+							text:"Jason Mraz - Christmas in Quarantine"
+						},{
+							src:"../img-radio/mv7.jpg",
+							text:"张贤胜 - I Just Can't Stop Loving You"
+						},{
+							src:"../img-radio/mv8.jpg",
+							text:"24KGoldn、DaBaby - Coco"
+						},{
+							src:"../img-radio/mv9.jpg",
+							text:"林俊杰 - 最好是"
+						},{
+							src:"../img-radio/mv10.jpg",
+							text:"SUPER JUNIOR - SUPER JUNIOR The 10th Album #2《Burn The Floor》Performance Video"
+					}]
+				}
+			})
+		</script>
+	</body>
+</html>

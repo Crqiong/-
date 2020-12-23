@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../js/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			a{
+				text-decoration: none;
+			}
+			/* 头部的大小设置 */
+			nav{
+				width: 100%;
+				height: 175px;
+				/* border: 1px solid  #000000; */
+				/* min-width: 1400px;
+				max-width: 1800px; */
+				margin: 0px auto;
+			}
+			/* 第一条导航栏 */
+			nav>.nav_one{
+				width: 100%;
+				height: 75px;
+				/* border: 1px solid  #000000; */
+				/* background: aqua; */
+			}
+			/* 头部下第一个导航栏 */
+			nav>.nav_one>.nav_header{
+				width: 1000px;
+				height: 75px;
+				/* border: 1px solid #000000; */
+				margin: 0px auto;
+				
+			}
+			/* 设置li节点 */
+			nav>.nav_one>.nav_header>.nav_header1>li{
+				list-style: none;
+				float: left;
+				
+				margin-left: 40px;
+				line-height: 65px;
+			}
+			nav>.nav_one>.nav_header>.nav_header1>li>a>img{
+				margin-top: 13px;
+				
+				/* width: 100%; */
+			}
+			
+			nav>.nav_two{
+				width: 100%;
+				height: 55px;
+				/* border: 1px solid  #000000; */
+				background-color: #2c323b;
+			}
+			nav>.nav_one>.nav_header>.nav_header2>li{
+				list-style: none;
+				float: left;
+				margin-left: 25px;
+				line-height: 65px;
+				position: relative;
+				left: 180px;
+			}
+			nav>.nav_one>.nav_header>.nav_header2>li>a{
+				color:#777;
+				font-size: 13px;
+			}
+			nav>.nav_one>.nav_header>.nav_header2>li>a>.dl{
+				width: 50px;
+				height: 30px;
+				/* border: 1px solid #000000; */
+				position: absolute;
+				top:18px;
+				left: 20px;
+				background-color:#28a9f3;
+				text-align: center;
+				line-height: 30px;
+				
+			}
+			nav>.nav_one>.nav_header>.nav_header2>li>a>.dl>p{
+				color:#fff ;
+				font-size: 13px;
+			}
+			
+			nav>.nav_three{
+				width: 100%;
+				height: 45px;
+				/* border: 1px solid  #000000; */
+				background: pink;
+			}
+			/* 中部 */
+			container{
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			/* 中部导航栏 */
+			container>.head{
+				width: 100%;
+				min-width: 1000px;
+				height: 50px;
+				background: #2c323b;
+			}
+			container>.head>.head_nav{
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+			
+			}
+			container>.head>.head_nav>.left{
+				float: left;
+				margin-left: -220px;
+			}
+			container>.head>.head_nav>ul>li{
+				list-style: none;
+				float: left;
+			}
+			container>.head>.head_nav>.left>li:hover{
+				background: #009af3;
+			}
+			container>.head>.head_nav>.left>.more>a{
+				line-height: normal;
+				margin: 15px 0 14px 0;
+			}
+			container>.head>.head_nav>.left>li a{
+				display: inline-block;
+				line-height: 50px;
+				padding: 0 30px;
+				color: #ddd;
+				text-decoration: none;
+			}
+			container>.head>.head_nav>.left>.more:hover>a>.xiajiantou{
+				transform: rotate(180deg);
+				/* background: red; */
+			}
+			container>.head>.head_nav>.left>.more:hover>ul{
+				display: block;
+			}
+			container>.head>.head_nav>.left>.more{
+				position: relative;
+			}
+			container>.head>.head_nav>.left>.more>ul{
+				background: #2c323b;
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+			container>.head>.head_nav>.left>.more>ul>li{
+				list-style: none;
+				text-align: center;
+			}
+			container>.head>.head_nav>.left>.more>ul>li>a{
+				line-height: 35px;
+				width: 52px;
+				color: #bbb;
+			}
+			container>.head>.head_nav>.left>.more>ul>li:hover>a{
+				background: #4c5968;
+				color: white;
+			}
+			container>.head>.head_nav>.right{
+				float: right;
+			}
+			container>.head>.head_nav>.right>li{
+				list-style: none;
+				margin-left: 30px;
+				line-height: 50px;
+				font-size: 14px;
+			}
+			container>.head>.head_nav>.right>li>a{
+				color: #bbb;
+				text-decoration: none;
+			}
+			container>.head>.head_nav>.right>li>a:hover{
+				color: #009AF3;
+			}
+			/* 第二部分 */
+			header{
+				width: 100%;
+				height: 1000px;
+				/* background-color: #0000FF; */
+				padding: 0px 230px;
+			}
+			header>.header_one{
+				width: 900px;
+				height: 800px;
+				/* background-color: #008000; */
+				position: relative;
+				}
+			header>.header_one>.header_two{
+				width: 900px;
+				height: 700px;
+				/* background-color: wheat; */
+				position: absolute;
+				top: 100px;
+			}
+			header>.header_one>.header_one1{
+				width: 900px;
+				height: 60px;
+				/* background-color: red; */
+				position: absolute;
+				top: 15px;
+				line-height: 60px;
+				text-align: center;
+			}
+			header>.header_one>.header_one1>ul>li{
+				width: 24.77%;
+				list-style: none;
+				float: left;
+				border: 1px solid #000000;
+				color: #33333;
+				/* background-color: floralwhite; */
+				
+			}
+			
+			/* div部分的 */
+			header>.header_one>.header_two>.header_two2{
+				width: 900px;
+				height: 60px;
+				/* background-color: white; */
+				position: absolute;
+				top: 0px;
+			}
+			header>.header_one>.header_two>.header_two3{
+				width: 900px;
+				height: 60px;
+				/* background-color: yellow; */
+				position: absolute;
+				top: 70px;
+			}
+			header>.header_one>.header_two>.header_two3>dd>span{
+				border: 1px solid #000000;
+				margin-left: 20px;
+				display: inline-block;
+				width: 90px;
+				text-align: center;
+			}
+			header>.header_one>.header_two>.header_two3>dd>span>a{
+				color: #000000;
+				text-decoration: none;
+				}
+			header>.header_one>.header_two>.header_two4{
+				width: 900px;
+				height: 220px;
+				/* background-color: black; */
+				position: absolute;
+				top: 160px;
+			}
+			header>.header_one>.header_two>.header_two5{
+				width: 900px;
+				height: 50px;
+				/* background-color: black; */
+				position: absolute;
+				top: 220px;
+			}
+			header>.header_one>.header_two>.header_two6{
+				width: 900px;
+				height: 50px;
+				/* background-color: black; */
+				position: absolute;
+				top: 260px;
+			}
+			header>.header_one>.header_two>.header_two7{
+				width: 900px;
+				height: 50px;
+				/* background-color: black; */
+				position: absolute;
+				top: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			
+			<div class="nav_one">
+				<div class="nav_header">
+					<ul class="nav_header1">
+						<li>
+							<a href=><img src="../img/logo.png" width=200px;></a>
+						</li>
+						<li>
+							<input type="text" name="" id="" value="" placeholder="下雨天"  style="height: 30px; width: 220px;" />
+							<button type="button">搜索</button>
+						</li>
+						
+						</ul>
+						<ul class="nav_header2">
+							<li><a href="">客服中心</a></li>
+							<li><a href="">招贤纳士</a></li>
+							<li><a href="">会员中心</a></li>
+							<li style="margin-left: 30px; margin-top: 2px;" >|</li>
+							<li><a href="">
+							<div class="dl"> 
+							<p>登录</p>
+							</div>
+							</a></li>
+						</ul>
+				</div>
+				
+			</div>
+			<container>
+				<div class="head">
+					<div class="head_nav">
+						<ul class="left">
+							<li><a href="">首页</a></li>
+							<li><a href="">榜单</a></li>
+							<li><a href="">下载客户端</a></li>
+							<li class="more">
+								<a href="">更多&nbsp;<span class="iconfont icon-xiajiantou xiajiantou" style="display: inline-block;"></span></a>
+								<ul>
+									<li><a href="">电台</a></li>
+									<li><a href="">MV&nbsp;</a></li>
+									<li><a href="">歌单</a></li>
+									<li><a href="">歌手</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="right">
+							<li><a href=""><span class="iconfont icon-xingxing"></span>&nbsp;直播</a></li>
+							<li><a href=""><span class="iconfont icon-shangcheng"></span>&nbsp;商城</a></li>
+							<li><a href=""><span class="iconfont icon-erji"></span>&nbsp;音乐人</a></li>
+							<li><a href=""><span class="iconfont icon-dianpu"></span>&nbsp;代理商</a></li>
+							<li><a href=""><span class="iconfont icon-maikefeng"></span>&nbsp;主播电台</a></li>
+							<li><a href=""><span class="iconfont icon-pintu"></span>&nbsp;开放平台</a></li>
+						</ul>
+					</div>
+				</div>
+		</nav>
+		<header>
+			<div class="header_one">
+				<div class="header_one1">
+					<ul>
+						<li>酷狗软件客服中心</li>
+						<li>酷狗商场客服中心</li>
+						<li><a href="02跳转页面.html">酷狗直播客服中心</a></li>
+						<li>酷狗音乐人客服中心</li>
+					</ul>
+				</div>
+				<div class="header_two">
+					<div class="header_two2">
+						<dl>
+							<dd>
+								<b style="line-height: 60px;">您的身份：</b>
+								<input type="radio" name="usertype" id="" value="0" checked="checked" style="width:20px;border:0;height:13px;line-height:13px;vertical-align:top;margin-top:25px !important;" />
+								普通用户
+								<input type="radio" name="usertype" id="" value="0" checked="checked" style="width:20px;border:0;height:13px;line-height:13px;vertical-align:top;margin-top:25px !important;" />
+								vip用户(尊享绿色通道服务)
+							</dd>
+						</dl>
+					</div>
+					<div class="header_two3">
+						<dd>
+							<b style="line-height: 50px;">选择平台：</b>
+							<span><a href="">电脑版</a></span>
+							<span><a href="">安卓手机</a></span>
+							<span><a href="">iphone手机</a></span>
+							<span><a href="">Mac版</a></span>
+							<span><a href="">UWP版</a></span>
+						</dd>
+					</div>
+					<div class="header_two4">
+						<dd>
+							<b style="">反馈意见：</b>
+							<textarea rows="" cols="" onfocus="setValue(this,1)"  name="content" onblur="setValue(this,2)"  style=" color: silver; font-size: 12px; width:600px;overflow:hidden;border:1px solid #666;padding:5px;" write="false" >	
+							</textarea>
+						</dd>
+					</div>
+					<div class="header_two5">
+						<dd>
+							<b>酷狗账号:</b>
+							<input type="" name="" id="" value="" style="width: 150px ;height: 30px;" />
+						</dd>
+					</div>
+					<div class="header_two6">
+						<dd>
+							<b>联系方式:</b>
+							<input type="text" name="qq" id="" value="请输入qq"  style="color:silver;font-size:12px;font-family:\5b8b\4f53, Arial, Verdana;padding-left:3px; width: 150px ;height: 30px;"  />
+							<span style="color: silver;">仅酷狗工作人员可见，请暂时取消加好友时的验证限制</span>
+						</dd>
+					</div>
+					<div class="header_two7">
+						<button type="button" style="width: 80px; height: 30px; margin-left: 75px;">发送</button>
+					</div>
+					<!-- <div class="header_one2"></div>
+					<div class="header_one3"></div>
+					<div class="header_one4"></div>
+					<div class="header_one5"></div>
+					<div class="header_one6"></div>
+					<div class="header_one7"></div> -->
+				</div>
+				
+			</div>
+		</header>
+		<script type="text/javascript">
+			$("header>.header_one>.header_one1>ul>li").click(function(){
+				// var index = $(this).index();
+				$(this).css("background","#28a9f3");
+				$(this).siblings().css("background","hsla(0,0%,100%,.5)");
+				$("header>.header_two>.header_two2>div").eq(index).css("display","block").siblings("header>.header_two>.header_two2>div").css("display","none");
+			})
+			
+			
+		</script>
+	</body>
+</html>

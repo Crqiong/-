@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding:0px;
+			}
+			header{
+				width: 1000px;
+				height: 80px;
+				margin: 0 auto;
+				/* background-color: light#009af3; */
+			}
+			header>h1{
+				display: inline-block;
+				float: left;
+				margin-top: 20px;
+			}
+			header>h1>a>img{
+				display: block;
+			}
+			header>.seach{
+				margin-left: 45px;
+				margin-top: 20px;
+				background: white;
+				float: left;
+				border: 1px solid #ccc;
+			}
+			header>.seach>input{
+				padding: 5px 10px;
+				font-size: 20px;
+				height: 100%;
+				outline: none;
+				border: 0;
+				float: left;
+			}
+			header>.seach>span{
+				padding: 8px 7px;
+				display: inline-block;
+				cursor: pointer;
+			}
+			header>.seach>span:hover{
+				color: #009af3;
+			}
+			header>ul{
+				float: right;
+				margin-right: 70px;
+				margin-top: 25px;
+				box-sizing: border-box;
+			}
+			header>ul>li{
+				float: left;
+				list-style: none;
+				margin-top: 7px;
+				padding-right:20px;
+				font-size: 13px;
+			}
+			header>ul>li>a{
+				color: #777;
+				text-decoration: none;
+			}
+			header>ul>li>a:hover{
+				color: #009af3;
+			}
+			header>ul>a{
+				display: inline-block;
+				background: #009af3;
+				border-radius: 2px;
+				padding: 7px 12px;
+				font-size: 13px;
+				margin-left: 25px;
+				color: white;
+				text-decoration: none;
+				float: left;
+			}
+			header>ul>a:hover{
+				color: #fff;
+				/* border: 1px solid #158fe1; */
+				background-color: #158fe1;
+			}
+			/* 中部 */
+			container{
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			/* 中部导航栏 */
+			container>.head{
+				width: 100%;
+				min-width: 1000px;
+				height: 50px;
+				background: #2c323b;
+			}
+			container>.head>.head_nav{
+				width: 1030px;
+				height: 50px;
+				margin: 0 auto;
+			
+			}
+			container>.head>.head_nav>.left{
+				float: left;
+			}
+			container>.head>.head_nav>ul>li{
+				list-style: none;
+				float: left;
+			}
+			container>.head>.head_nav>.left>li:hover{
+				background: #009af3;
+			}
+			container>.head>.head_nav>.left>.more>a{
+				line-height: normal;
+				margin: 15px 0 14px 0;
+			}
+			container>.head>.head_nav>.left>li a{
+				display: inline-block;
+				line-height: 50px;
+				padding: 0 30px;
+				color: #ddd;
+				text-decoration: none;
+			}
+			container>.head>.head_nav>.left>.more:hover>a>.xiajiantou{
+				transform: rotate(180deg);
+				/* background: red; */
+			}
+			container>.head>.head_nav>.left>.more:hover>ul{
+				display: block;
+			}
+			container>.head>.head_nav>.left>.more{
+				position: relative;
+			}
+			container>.head>.head_nav>.left>.more>ul{
+				background: #2c323b;
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+			container>.head>.head_nav>.left>.more>ul>li{
+				list-style: none;
+				text-align: center;
+			}
+			container>.head>.head_nav>.left>.more>ul>li>a{
+				line-height: 35px;
+				width: 52px;
+				color: #bbb;
+			}
+			container>.head>.head_nav>.left>.more>ul>li:hover>a{
+				background: #4c5968;
+				color: white;
+			}
+			container>.head>.head_nav>.right{
+				float: right;
+			}
+			container>.head>.head_nav>.right>li{
+				list-style: none;
+				margin-left: 30px;
+				line-height: 50px;
+				font-size: 14px;
+			}
+			container>.head>.head_nav>.right>li>a{
+				color: #bbb;
+				text-decoration: none;
+			}
+			container>.head>.head_nav>.right>li>a:hover{
+				color: #009AF3;
+			}
+			.frame{
+				width: 100%;
+				padding-top:24px ;
+			}
+			.frame>.radio{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.frame>.radio>.left{
+				width: 210px;
+				float: left;
+			}
+			.frame>.radio>.right{
+				width: 780px;
+				float: right;
+			}
+			.frame>.radio h2{
+				height: 30px;
+				line-height: 30px;
+				color: #fff;
+				font-size: 16px;
+				text-align: center;
+				background: #cfcfcf;
+				font-weight: normal;
+				display: none;
+			}
+			.frame>.radio>.leftCon{
+				width: 210px;
+				float: left;
+			}
+			.frame>.radio>.leftCon>.radiolist{
+				margin: 10px 0 0px 0px;
+				position: relative;
+				overflow: hidden;
+				width: 210px;
+			}
+			.frame>.radio>.leftCon>.radiolist li{
+				line-height: 36px;
+				text-align: center;
+				color: #000000;
+				font-size: 14px;
+			}
+			.frame>.radio>.rightCon{
+				width: 765px;
+				float: left;
+				font-size: 12px;
+				margin: 20px 0 20px 10px;
+				border-left: 1px solid #e2e2e2;
+				position: relative;
+				z-index: 90;
+				overflow: hidden;				
+			}
+			.frame>.radio>.rightCon ul{
+				width: 765px;
+				float: left;
+				display: none;
+			}
+			.frame>.radio>.rightCon>ul>li{
+				width: 185px;
+				height: 40px;
+				list-style: none;
+				float: left;
+				margin-left:56px ;
+				padding-top: 1px;
+				margin-bottom: 10px;
+				position: relative;
+			}
+			.frame>.radio>.rightCon>ul>li>a{
+				position: absolute;
+				top: 0;
+				text-decoration: none;
+				font-size: 14px;
+				color: #555;
+				cursor: pointer;
+				font-style: normal;
+			}
+			.frame>.radio>.rightCon>ul>li>p{
+				color: #999999;
+				width: 100%;
+				margin: 2px 3px 0 0px;
+				line-height: 28px;
+				overflow: hidden;
+				text-overflow: ellipsis;/* 超出省略号 */
+				white-space:nowrap; /* 强制一行显示 */
+				position: absolute;
+				top: 14px;
+			}
+			.frame>.radio>.rightCon>ul>li>div,p,a{
+				display: inline-block;
+				margin-right: 4px;
+			}
+			.frame>.radio>.rightCon>ul>li>div{
+				width: 36px;
+				height: 36px;
+				background: url(../img-radio/play.png);
+				background-position: 316px 391px;		
+			}
+			.frame>.radio>.rightCon>ul>li>div>img{
+				position: absolute;
+				top: 3px;
+				left: 2px;
+			}
+			.frame>.radio>.rightCon>ul>li:hover>div{
+				background-position: 366px 391px;
+			}
+			.frame>.radio>.rightCon span{
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				margin-left: 4px ;
+				margin-top: 2px;
+				background-image: url(./../img-radio/play.png);
+				background-position: 366px 591px;
+				position: absolute;
+				display: none;
+			}
+			.frame>.radio>.rightCon>ul>li:hover>a>span{
+				display: inline-block;
+			}
+			.frame>.radio>.rightCon>ul>li:hover>a{
+				color: deepskyblue;
+			}
+			.footer{
+				width: 100%;
+				margin: 50px auto 0 auto;
+				background: #2c323b;
+				float: left;
+			}
+			.footer>.footer-top{
+				height: 20px;
+				width: 100%;
+				text-align: center;
+				padding: 10px 0;
+				border-bottom: 1px solid gray;
+			}
+			.footer>.footer-top>ul{
+				min-width: 1000px;
+				margin: 0 auto;
+				display: inline-block;
+			}
+			.footer>.footer-top>ul>li{				
+				float: left;
+				list-style:none;
+				line-height: 12px;
+				padding: 0 13px;				
+				border-left: 1px solid white;
+			}
+			.footer>.footer-top>ul>li>a{
+				text-decoration: none;
+				color: #b1b3b9;
+				font-size: 12px;
+				text-align: center;
+				padding: 2px 5px;
+			}
+			.footer>.footer-top>ul>li:hover>a{
+				color: dodgerblue;
+			}
+			.footer>.links{
+				margin: 0 auto;
+				position: relative;
+				zoom: 1;
+				border-bottom: 1px solid #3d424a;
+				padding: 40px 0px;
+				font-size: 12px;
+				color: #b1b3b9;
+				text-align: center;		
+			}
+			.footer>.links>p{
+				width: 1000px;
+				display: inline-block;
+				line-height: 30px;
+				text-align: center;
+				color: #b1b3b9;
+			}
+			.footer>.links>p a{
+				text-decoration: none;
+				color:#b1b3b9;
+			}
+			.footer>.links>p>a:hover{
+				color:dodgerblue ;
+			}
+		</style>
+		<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+		<script src="../js/vue.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	</head>
+	<body>
+		<header>
+			<!-- 背景图logo -->
+			<h1><a href=""><img src="../img-radio//logo.png" alt=""></a></h1>
+			<!-- 搜索框 -->
+			<div class="seach">
+				<input type="text" name="" id=""><span class="iconfont icon-magnifier"></span>
+			</div>
+			<!-- 列表 -->
+			<ul>
+				<li><a href="">客服中心</a></li>
+				<li><a href="">招贤纳士</a></li>
+				<li><a href="">会员中心</a></li>
+				<li style="border-right: 1px solid #CCCCCC;"><a href="">商务合作</a></li>
+				<a href="">登录</a>
+			</ul>
+		</header>
+		<container>
+			<div class="head">
+				<div class="head_nav">
+					<ul class="left">
+						<li><a href="..\index.html">首页</a></li>
+						<li><a href="">榜单</a></li>
+						<li><a href="">下载客户端</a></li>
+						<li class="more">
+							<a href="">更多&nbsp;<span class="iconfont icon-xiajiantou xiajiantou" style="display: inline-block;"></span></a>
+							<ul>
+								<li><a href="">电台</a></li>
+								<li><a href="">MV&nbsp;</a></li>
+								<li><a href="">歌单</a></li>
+								<li><a href="">歌手</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="right">
+						<li><a href=""><span class="iconfont icon-xingxing"></span>&nbsp;直播</a></li>
+						<li><a href=""><span class="iconfont icon-shangcheng"></span>&nbsp;商城</a></li>
+						<li><a href=""><span class="iconfont icon-erji"></span>&nbsp;音乐人</a></li>
+						<li><a href=""><span class="iconfont icon-dianpu"></span>&nbsp;代理商</a></li>
+						<li><a href=""><span class="iconfont icon-maikefeng"></span>&nbsp;主播电台</a></li>
+						<li><a href=""><span class="iconfont icon-pintu"></span>&nbsp;开放平台</a></li>
+					</ul>
+				</div>
+			</div>
+		</container>
+		<div class="frame">
+			<div class="radio">
+				<div class="left">
+					<h2 style="display: block;">电台分类</h2>
+				</div>
+				<div class="right" id="Radios">
+					<h2 style="display: block;">全部电台(171个)</h2>
+					<h2>主题电台(27个)</h2>
+					<h2>风格电台(14个)</h2>
+					<h2>语言电台(17个)</h2>
+					<h2>人群电台(4个)</h2>
+					<h2>地点电台(19个)</h2>
+					<h2>心情电台(7个)</h2>
+				</div>
+				<div class="leftCon">
+					<div class="radiolist">
+						<ul id="radioList">
+							<li style="background: #85d4f3;" class="one">全部电台</li>
+							<li class="one">主题电台</li>
+							<li class="one">风格电台</li>
+							<li class="one">语言电台</li>
+							<li class="one">人群电台</li>
+							<li class="one">地点电台</li>
+							<li class="one">心情电台</li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightCon" id="rightRadio">
+					<ul style="display: block;">
+						<li v-for="(v,i) in all" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>
+					</ul>
+					<ul>
+						<li v-for="(v,i) in theme" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>					
+					</ul>
+					<ul>
+						<li v-for="(v,i) in styles" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>					
+					</ul>
+					<ul>
+						<li v-for="(v,i) in language" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>					
+					</ul>
+					<ul>
+						<li v-for="(v,i) in crowd" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>					
+					</ul>
+					<ul>
+						<li v-for="(v,i) in place" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>					
+					</ul>
+					<ul>
+						<li v-for="(v,i) in mood" >
+							<div><img v-bind:src="v.src" alt=""></div>
+							<a href="">{{v.text}}<span class="player"></span></a>
+							<p>{{v.title}}</p>
+						</li>					
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-top">
+				<ul>
+					<li style="border-left: 1px solid #2c323b;"><a href="">关于酷狗</a></li>
+					<li><a href="">监督举报</a></li>
+					<li><a href="">商务合作</a></li>
+					<li><a href="">广告服务</a></li>
+					<li><a href="">投诉指引</a></li>
+					<li><a href="">隐私政策</a></li>
+					<li><a href="">儿童隐私</a></li>
+					<li><a href="">用户服务协议</a></li>
+					<li><a href="">酷狗音乐人</a></li>
+					<li><a href="">酷狗直通车</a></li>
+					<li><a href="">招聘信息</a></li>
+					<li><a href="">客服中心</a></li>
+					<li><a href="">用户体验计划</a></li>
+				</ul>
+			</div>
+			<div class="links">
+				<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+				<p>信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339&nbsp;&nbsp;&nbsp;<a href="">粤ICP备09017694号</a><span><a href=""><img src="../img-radio/footer_icon.png" ></a></span></p>
+				<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026&nbsp;&nbsp;&nbsp;<a href="">营业执照</a></p>
+				<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018 <a href="">粤公网安备 44010602000141号</a><span><a href=""><img src="./../img-radio/icon_yuewangga1.png" ></a></span></p>
+				<p><a href="">互联网不良信息举报中心：www.12377.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;酷狗不良信息举报邮箱：jubao_music@kugou.net&nbsp;&nbsp;&nbsp;&nbsp;客服邮箱：kefu@kugou.com</p>
+				<p>Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2020 KuGou-Inc.All Rights Reserved</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var index =0;
+			$("#radioList>li").click(function(){
+				index=$(this).index();
+				$(this).css("background","#85d4f3").siblings().css("background","white");
+				$("#rightRadio>ul").eq($(this).index()).show().siblings("#rightRadio>ul").hide();
+				$("#Radios>h2").eq($(this).index()).show().siblings("#Radios>h2").hide();
+			})
+			$("#radioList>li").mouseover(function(){
+				$(this).css("background","#85d4f3");
+			})
+			$("#rightRadio>li").mouseover(function(){
+				$("div").css("background","")
+			})
+			$("#radioList>li").mouseout(function(){
+				if($(this).index()==index){
+					$(this).css("background","#85d4f3");
+				}else{
+					$(this).css("background","white")
+				}
+			})
+			new Vue({
+				el:"#rightRadio",
+				data:{
+					all:[{
+						src:"../img-radio//KTV.png",
+						text:"KTV必点曲",
+						title:"黄小琥-重来"
+					},{
+						src:"../img-radio/2.jpg",
+						text:"唱作人2",
+						title:"Vinida万妮达 - 猎捕Hunt You Down"
+					},{
+						src:"../img-radio/3.jpg",
+						text:"乐队无限公司",
+						title:"刘文君、胡仕泽、孙辰逸、艾迪、郭翰龙 - 无名之辈"
+					},{
+						src:"../img-radio/4.jpg",
+						text:"新声请指教",
+						title:"黄霄雲、郑俊树 - 打开"
+					},{
+						src:"../img-radio/4.jpg",
+						text:"音浪合伙人",
+						title:"薛之谦 - 火星人来过"
+					},{
+						src:"../img-radio/6.jpg",
+						text:"中国好声音",
+						title:"郭沁 - 船歌"
+					},{
+						src:"../img-radio/7.jpg",
+						text:"明日之子",
+						title:"sis_NoNo洪一诺、R1SE张颜齐 - 漂浮群岛"
+					},{
+						src:"../img-radio/8.jpg",
+						text:"创造营2019",
+						title:"张远 - 侥幸者"
+					},{
+						src:"../img-radio/9.jpg",
+						text:"这！就是原创",
+						title:"白若溪 - 存在"
+					},{
+						src:"../img-radio/10.jpg",
+						text:"蒙面唱将猜猜猜",
+						title:"徐佳莹 - 慢慢喜欢你"
+					},{
+						src:"../img-radio/11.jpg",
+						text:"中国新说唱",
+						title:"Max马俊 - Max"
+					},{
+						src:"../img-radio/12.jpg",
+						text:"创造101",
+						title:"火箭少女101Yamy、Sunnee杨芸晴、魏瑾、葛佳慧、焦曼婷、王菊、葛佳慧 CYCLONE - 木兰说"
+					},{
+						src:"../img-radio/13.jpg",
+						text:"嗨，唱起来！",
+						title:"孙楠、石沛灵 - 征服"
+					},{
+						src:"../img-radio/14.jpg",
+						text:"歌手",
+						title:"光良 - 勇气"
+					},{
+						src:"../img-radio/15.jpg",
+						text:"网络红歌",
+						title:"潘柯夫、王嘉诚、蘑菇 - 哈尼么么哒"
+					},{
+						src:"../img-radio/16.jpg",
+						text:"中文经典",
+						title:"梁咏琪 - 新鲜"
+					},{
+						src:"../img-radio/17.jpg",
+						text:"伤感网络情歌",
+						title:"王思妍 - 某一天"
+					},{
+						src:"../img-radio/18.jpg",
+						text:"最爱成名曲",
+						title:"张敬轩 - 吻得太逼真"
+					},{
+						src:"../img-radio/19.jpg",
+						text:"酷狗热歌",
+						title:"郑凯 - 好久不见"
+					},{
+						src:"../img-radio/20.jpg",
+						text:"那年MP3里的歌",
+						title:"庾澄庆 - 静静的"
+					},{
+						src:"../img-radio/21.jpg",
+						text:"店铺",
+						title:"江映蓉 - 热门花招"
+					},{
+						src:"../img-radio/22.jpg",
+						text:"老情歌",
+						title:"黄凯芹 - 偶然"
+					},{
+						src:"../img-radio/23.jpg",
+						text:"热评100W+歌曲",
+						title:"刘子璇 - 嘴巴嘟嘟"
+					},{
+						src:"../img-radio/24.jpg",
+						text:"世界及热门单曲",
+						title:"Florence Welch、Calvin Harris - Sweet Nothing"
+					},{
+						src:"../img-radio/25.jpg",
+						text:"情歌对唱",
+						title:"吉娜、金志文 - 一个人的城市"
+					},{
+						src:"../img-radio/26.jpg",
+						text:"酷狗新歌",
+						title:"Passenger - Remember To Forget"
+					},{
+						src:"../img-radio/27.jpg",
+						text:"中国有嘻哈",
+						title:"Jony J - My Style"
+					},{
+						src:"../img-radio/28.jpg",
+						text:"我是歌手",
+						title:"李克勤、林子祥、叶倩文 - 左林右莉走一回"
+					},{
+						src:"../img-radio/29.jpg",
+						text:"厉害了！我的歌",
+						title:"金志文、汪正正 - 一剪梅"
+					},{
+						src:"../img-radio/30.jpg",
+						text:"围炉音乐会",
+						title:"黄贯中、叶世荣 - 大地"
+					},{
+						src:"../img-radio/31.jpg",
+						text:"中文DJ",
+						title:"罗百吉 - 假日"
+					},{
+						src:"../img-radio/32.jpg",
+						text:"抖音最火DJ",
+						title:"DJ - Tu Vivi Nellaria"
+					},{
+						src:"../img-radio/33.jpg",
+						text:"由你音乐榜",
+						title:"张紫宁 - 不爱而别"
+					},{
+						src:"../img-radio/34.jpg",
+						text:"国创ACG",
+						title:"英雄联盟 - 涅槃 (Phoenix)"
+					},{
+						src:"../img-radio/35.jpg",
+						text:"神曲",
+						title:"王麟 - QQ爱"
+					},{
+						src:"../img-radio/36.jpg",
+						text:"中国好歌曲",
+						title:"陈云 - 你做妈妈 我做爸爸"
+					},{
+						src:"../img-radio/37.jpg",
+						text:"盖世英雄",
+						title:"吉克隽逸 - 依然爱你"
+					},{
+						src:"../img-radio/38.jpg",
+						text:"浓情圣诞节",
+						title:"Jaci Velasquez - Feliz Navidad"
+					},{
+						src:"../img-radio/39.jpg",
+						text:"劲舞团的回忆",
+						title:"南拳妈妈 - 你不像她"
+					},{
+						src:"../img-radio/40.jpg",
+						text:"轻音乐",
+						title:"李欣芸 - Lalu岛上的茄苳树王"
+					},{
+						src:"../img-radio/41.jpg",
+						text:"经典影视原声",
+						title:"陈奕迅 - 时代曲"
+					},{
+						src:"../img-radio/42.jpg",
+						text:"发烧女声",
+						title:"孙露 - 从此我该怎么过"
+					},{
+						src:"../img-radio/43.jpg",
+						text:"儿童故事",
+						title:"竹石文化 - 第87集 狐狸比狼还狡猾"
+					},{
+						src:"../img-radio/44.jpg",
+						text:"广场舞",
+						title:"火风 - 大花轿"
+					},{
+						src:"../img-radio/45.jpg",
+						text:"咖啡厅",
+						title:"陈奕迅 - 心的距离"
+					},{
+						src:"../img-radio/46.jpg",
+						text:"一个人",
+						title:"袁咏琳 - 把伤心打碎"
+					},{
+						src:"../img-radio/47.jpg",
+						text:"工作加油曲",
+						title:"李宇春 - Why Me"
+					},{
+						src:"../img-radio/48.jpg",
+						text:"睡前",
+						title:"Peter Jeremias - Stardust"
+					},{
+						src:"../img-radio/49.jpg",
+						text:"学习",
+						title:"Josh Rouse - Flight Attendant"
+					},{
+						src:"../img-radio/50.jpg",
+						text:"散步",
+						title:"林俊杰 - 一个又一个"
+					},{
+						src:"../img-radio/51.jpg",
+						text:"清吧",
+						title:"Mathieu Edward - Entre Toi Et Moi"
+					},{
+						src:"../img-radio/52.jpg",
+						text:"在路上",
+						title:"张学友 - 三分拍"
+					},{
+						src:"../img-radio/53.jpg",
+						text:"驾驶",
+						title:"陈楚生 - Sing"
+					},{
+						src:"../img-radio/54.jpg",
+						text:"打游戏",
+						title:"Martin Garrix、Pierce Fulton、Mike Shinoda - Waiting For Tomorrow"
+					},{
+						src:"../img-radio/55.jpg",
+						text:"聚会暖场",
+						title:"罗志祥 - 爱投罗网"
+					},{
+						src:"../img-radio/56.jpg",
+						text:"婚礼",
+						title:"Rihanna - California King Bed"
+					},{
+						src:"../img-radio/57.jpg",
+						text:"午休",
+						title:"孙燕姿 - 同类"
+					},{
+						src:"../img-radio/58.jpg",
+						text:"安静",
+						title:"林俊杰 - 她说"
+					},{
+						src:"../img-radio/59.jpg",
+						text:"起床",
+						title:"Bruno Mars - Runaway Baby"
+					},{
+						src:"../img-radio/60.jpg",
+						text:"轻松",
+						title:"梁静茹 - 慢慢来比较快"
+					},{
+						src:"../img-radio/61.jpg",
+						text:"伤感",
+						title:"吴若希 - 爱要撑下去"
+					},{
+						src:"../img-radio/62.jpg",
+						text:"寂寞",
+						title:"孙燕姿 - 开始懂了"
+					},{
+						src:"../img-radio/63.jpg",
+						text:"甜蜜",
+						title:"山野(李昊瀚) - 如果爱能早些说出来"
+					},{
+						src:"../img-radio/64.jpg",
+						text:"兴奋",
+						title:"The Fratellis - Tell Me A Lie"
+					},{
+						src:"../img-radio/65.jpg",
+						text:"思念",
+						title:"周杰伦 - 最长的电影"
+					},{
+						src:"../img-radio/66.jpg",
+						text:"90后",
+						title:"金莎 - 星月神话"
+					},{
+						src:"../img-radio/67.jpg",
+						text:"80后",
+						title:"刘嘉玲、张信哲 - 有一点动心"
+					},{
+						src:"../img-radio/68.jpg",
+						text:"70后",
+						title:"BEYOND - 逝去日子"
+					},{
+						src:"../img-radio/69.jpg",
+						text:"00后",
+						title:"本兮 - 海誓山盟亦会分开"
+					},{
+						src:"../img-radio/70.jpg",
+						text:"草原风",
+						title:"央金兰泽 - 布达拉"
+					},{
+						src:"../img-radio/71.jpg",
+						text:"流行",
+						title:"张玉华 - 属于自己"
+					},{
+						src:"../img-radio/72.jpg",
+						text:"民歌",
+						title:"李双江 - 明月几时有"
+					},{
+						src:"../img-radio/73.jpg",
+						text:"钢琴",
+						title:"西村由紀江 - 回忆"
+					},{
+						src:"../img-radio/74.jpg",
+						text:"萨克斯",
+						title:"Alfonzo Blackwell - Breezin´"
+					},{
+						src:"../img-radio/75.jpg",
+						text:"乡村音乐",
+						title:"Clay Walker - What´s It To You"
+					},{
+						src:"../img-radio/76.jpg",
+						text:"R&B",
+						title:"Justin Bieber、Usher - The Christmas Song"
+					},{
+						src:"../img-radio/77.jpg",
+						text:"摇滚",
+						title:"达达 - 暴雨"
+					},{
+						src:"../img-radio/78.jpg",
+						text:"尤克里里",
+						title:"Zee Avi - 31 Days"
+					},{
+						src:"../img-radio/79.jpg",
+						text:"爵士",
+						title:"Norah Jones - Little Room"
+					},{
+						src:"../img-radio/80.jpg",
+						text:"吉他",
+						title:"Armik - Serenata"
+					},{
+						src:"../img-radio/81.jpg",
+						text:"古风好歌",
+						title:"路飞老湿、安苏羽 - 封神传说"
+					},{
+						src:"../img-radio/82.jpg",
+						text:"蒸汽波",
+						title:"Da Brat - Funkdafied"
+					},{
+						src:"../img-radio/83.jpg",
+						text:"民谣",
+						title:"Sting - Shape Of My Heart"
+					},{
+						src:"../img-radio/84.jpg",
+						text:"说唱",
+						title:"Sean Kingston - Kingston"
+					},{
+						src:"../img-radio/85.jpg",
+						text:"百听不厌英文歌",
+						title:"Beyoncé - If I Were a Boy"
+					},{
+						src:"../img-radio/86.jpg",
+						text:"怀旧粤语",
+						title:"张学友 - 望月"
+					},{
+						src:"../img-radio/87.jpg",
+						text:"粤语",
+						title:"薛凯琪 - 小黑与我"
+					},{
+						src:"../img-radio/88.jpg",
+						text:"欧美",
+						title:"*NSYNC - This I Promise You"
+					},{
+						src:"../img-radio/89.jpg",
+						text:"怀旧华语",
+						title:"张学友 - 心碎了无痕"
+					},{
+						src:"../img-radio/90.jpg",
+						text:"闽南语",
+						title:"群星 - 面子问题"
+					},{
+						src:"../img-radio/91.jpg",
+						text:"韩语",
+						title:"刘智爱 - Delight"
+					},{
+						src:"../img-radio/92.jpg",
+						text:"国语",
+						title:"陶喆 - Melody"
+					},{
+						src:"../img-radio/93.jpg",
+						text:"日语",
+						title:"田村ゆかり - Endless Story"
+					},{
+						src:"../img-radio/94.jpg",
+						text:"法语",
+						title:"Элджей - Ультрафиолетовая лампа"
+					},{
+						src:"../img-radio/95.jpg",
+						text:"泰语",
+						title:"เสือ ธนพล - รักเดียวใจเดียว"
+					},{
+						src:"../img-radio/96.jpg",
+						text:"印度语",
+						title:"Anup Jalota - Roop Dekhe Tor Pagar Holo"
+					},{
+						src:"../img-radio/97.jpg",
+						text:"俄语",
+						title:"Элджей - Ультрафиолетовая лампа"
+					},{
+						src:"../img-radio/98.jpg",
+						text:"德语",
+						title:"EMMA6 - Kapitulieren"
+					},{
+						src:"../img-radio/99.jpg",
+						text:"意大利语",
+						title:"Laura Pausini - E.STA.A.TE"
+					},{
+						src:"../img-radio/100.jpg",
+						text:"客家语",
+						title:"邱廉钦 - 摇篮曲"
+					},{
+						src:"../img-radio/101.jpg",
+						text:"西班牙语",
+						title:"Morat - Cuánto Me Duele"
+					},{
+						src:"../img-radio/102.jpg",
+						text:"车载舞曲",
+						title:"花姐、何鹏 - 醉"
+					},{
+						src:"../img-radio/103.jpg",
+						text:"重低音",
+						title:"The Glitch Mob - The Stance"
+					},{
+						src:"../img-radio/104.jpg",
+						text:"EDM热歌",
+						title:"DJ Snake、Niniola - Maradona Riddim"
+					},{
+						src:"../img-radio/105.jpg",
+						text:"串烧舞曲",
+						title:"Cascada - One More Night"
+					},{
+						src:"../img-radio/106.jpg",
+						text:"电音",
+						title:"Swedish House Mafia - Save The World"
+					},{
+						src:"../img-radio/107.jpg",
+						text:"电子纯音",
+						title:"Anthony Rother - Super Future Metropolis"
+					},{
+						src:"../img-radio/108.jpg",
+						text:"0-1岁儿歌",
+						title:"Coccole Sonore - Bauba-da-ba"
+					},{
+						src:"../img-radio/109.jpg",
+						text:"1-3岁儿歌",
+						title:"宝宝巴士 - 王老先生有块地"
+					},{
+						src:"../img-radio/110.jpg",
+						text:"3-6岁儿歌",
+						title:"杨沛宜 - 左手右手"
+					},{
+						src:"../img-radio/111.jpg",
+						text:"小学儿歌",
+						title:"林妙可 - 妈妈教我一支歌"
+					},{
+						src:"../img-radio/112.jpg",
+						text:"英文儿歌",
+						title:"The Kiboomers - Rock Island Line"
+					},{
+						src:"../img-radio/113.jpg",
+						text:"胎教",
+						title:"Matthew Lien - Bressanone"
+					},{
+						src:"../img-radio/114.jpg",
+						text:"慢摇舞曲",
+						title:"Overground - One For Da Money"
+					},{
+						src:"../img-radio/115.jpg",
+						text:"健身房",
+						title:"M.I.B - Celebrate"
+					},{
+						src:"../img-radio/116.jpg",
+						text:"跑步",
+						title:"Paulina Rubio、Morat - Mi Nuevo Vicio"
+					},{
+						src:"../img-radio/117.jpg",
+						text:"动感单车",
+						title:"Conor Maynard - R U Crazy"
+					},{
+						src:"../img-radio/118.jpg",
+						text:"热身",
+						title:"Darin - Be What You Wanna Be"
+					},{
+						src:"../img-radio/119.jpg",
+						text:"HIIT",
+						title:"Adam Lambert - Trespassing"
+					},{
+						src:"../img-radio/120.jpg",
+						text:"力量训练",
+						title:"Sum 41 - Thanks for Nothing"
+					},{
+						src:"../img-radio/121.jpg",
+						text:"瑜伽",
+						title:"Renée Ravi - Silky Light"
+					},{
+						src:"../img-radio/122.jpg",
+						text:"出神舞曲",
+						title:"Stoneface & Terminal - Super Nature(Original Mix)"
+					},{
+						src:"../img-radio/123.jpg",
+						text:"华纳唱片",
+						title:"Oliver Tree - Bury Me Alive"
+					},{
+						src:"../img-radio/124.jpg",
+						text:"JYP",
+						title:"miss A - 하나부터 열까지"
+					},{
+						src:"../img-radio/125.jpg",
+						text:"古典音乐",
+						title:"Classical Artists - Salut Damour"
+					},{
+						src:"../img-radio/126.jpg",
+						text:"SACRA MUSIC",
+						title:"澤野弘之、Aimer、SawanoHiroyuki[nZk] - s-AVE"
+					},{
+						src:"../img-radio/127.jpg",
+						text:"日本ACG",
+						title:"河野マリナ - たからもの"
+					},{
+						src:"../img-radio/129.jpg",
+						text:"Prog House",
+						title:"Martin Garrix、Usher - Don´t Look Down"
+					},{
+						src:"../img-radio/129.jpg",
+						text:"Liquid State",
+						title:"Alan Walker、火箭少女101 - Faded"
+					},{
+						src:"../img-radio/130.jpg",
+						text:"布鲁斯",
+						title:"Led Zeppelin - Night Flight"
+					},{
+						src:"../img-radio/131.jpg",
+						text:"摩登天空",
+						title:"五条人 - 晚上好 春天小姐"
+					},{
+						src:"../img-radio/132.jpg",
+						text:"国风经典",
+						title:"墨明棋妙 - 故梦"
+					},{
+						src:"../img-radio/133.jpg",
+						text:"国风新歌",
+						title:"排骨教主 - 且停半生闲游"
+					},{
+						src:"../img-radio/134.jpg",
+						text:"伤感国风",
+						title:"魂锁 - 蛊心伤"
+					},{
+						src:"../img-radio/135.jpg",
+						text:"教育科普",
+						title:"亲宝儿歌 - 小心冻伤"
+					},{
+						src:"../img-radio/136.jpg",
+						text:"创造营2020",
+						title:"妙静鸥 - 大鱼"
+					},{
+						src:"../img-radio/137.jpg",
+						text:"轻松唤醒",
+						title:""
+					},{
+						src:"../img-radio/138.jpg",
+						text:"抖音热门歌",
+						title:"孟佳 - 糖果"
+					},{
+						src:"../img-radio/139.jpg",
+						text:"321热歌现场版",
+						title:"星娅 - 后来我去北京找过你"
+					},{
+						src:"../img-radio/140.jpg",
+						text:"八音盒",
+						title:"Relax α Wave - Let It Go"
+					},{
+						src:"../img-radio/141.jpg",
+						text:"中文舞曲",
+						title:"Leon Bridges - Twistin´ And Groovin´"
+					},{
+						src:"../img-radio/142.jpg",
+						text:"英文舞曲",
+						title:"Sebastian Weikum - Adem"
+					},{
+						src:"../img-radio/143.jpg",
+						text:"新民歌",
+						title:"龚玥 - 太湖美"
+					},{
+						src:"../img-radio/144.jpg",
+						text:"二次元精选",
+						title:"Linked Horizon - 紅蓮の弓矢"
+					},{
+						src:"../img-radio/145.jpg",
+						text:"动画儿歌",
+						title:"谢佳彤 - 勤洗手是个好习惯"
+					},{
+						src:"../img-radio/146.jpg",
+						text:"国学启蒙",
+						title:"华语群星、余又熙 - 如梦令"
+					},{
+						src:"../img-radio/147.jpg",
+						text:"睡眠故事",
+						title:"亲宝文化 - 谢谢"
+					},{
+						src:"../img-radio/148.jpg",
+						text:"冥想",
+						title:"Andrew Fitzgerald - Soothing Blue"
+					},{
+						src:"../img-radio/149.jpg",
+						text:"150bpm",
+						title:"市道真央、伊藤美来、立花理香 - Lost Princess"
+					},{
+						src:"../img-radio/150.jpg",
+						text:"自然",
+						title:"纯音乐 - 森林之馈赠"
+					},{
+						src:"../img-radio/151.jpg",
+						text:"160bpm",
+						title:"BEYOND - 冲开一切"
+					},{
+						src:"../img-radio/152.jpg",
+						text:"170bpm",
+						title:"GARNiDELiA - Special Girl"
+					},{
+						src:"../img-radio/153.jpg",
+						text:"最热影视歌曲",
+						title:"霍尊 - 九愿"
+					},{
+						src:"../img-radio/154.jpg",
+						text:"180bpm",
+						title:"The Chainsmokers、Charlee - Inside Out"
+					},{
+						src:"../img-radio/155.jpg",
+						text:"热门动漫歌曲",
+						title:"risou、ゆきな - us (アス)来"
+					},{
+						src:"../img-radio/156.jpg",
+						text:"日系清音",
+						title:"松田光由 - shizukana umi"
+					},{
+						src:"../img-radio/157.jpg",
+						text:"热门游戏原声",
+						title:"胡彦斌 - 降心掌"
+					},{
+						src:"../img-radio/158.jpg",
+						text:"白噪音",
+						title:"White Noise 2015 - White Noise: Dual Fans"
+					},{
+						src:"../img-radio/159.jpg",
+						text:"雨天",
+						title:"Coldplay - In My Place"
+					},{
+						src:"../img-radio/160.jpg",
+						text:"古筝",
+						title:"罗晶、纯音乐 - 雾里看花"
+					},{
+						src:"../img-radio/161.jpg",
+						text:"小提琴",
+						title:"西崎崇子、Hong Kong Philharmonic Orchestra、Peter Breiner - 如果没有你"
+					},{
+						src:"../img-radio/162.jpg",
+						text:"超嗨舞曲",
+						title:"Don Omar - Virtual Diva"
+					},{
+						src:"../img-radio/163.jpg",
+						text:"House舞曲",
+						title:"todd terry、Danny Rampling、steve mac - Underground World"
+					},{
+						src:"../img-radio/164.jpg",
+						text:"外文舞曲",
+						title:"Sigala - Easy Love"
+					},{
+						src:"../img-radio/165.jpg",
+						text:"国语热歌",
+						title:"蒋雪儿 - 真的好可惜"
+					},{
+						src:"../img-radio/166.jpg",
+						text:"欧美热歌",
+						title:"Natalia LaFourcade、Miguel - Remember Me (Dúo)"
+					},{
+						src:"../img-radio/167.jpg",
+						text:"笛子",
+						title:"纯音乐、pure music - 岷江夜曲"
+					},{
+						src:"../img-radio/168.jpg",
+						text:"二胡",
+						title:"闵惠芬 - 春诗"
+					},{
+						src:"../img-radio/169.jpg",
+						text:"葫芦丝",
+						title:"纯音乐 - 爱"
+					},{
+						src:"../img-radio/170.jpg",
+						text:"冥想梵音",
+						title:""
+					},{
+						src:"../img-radio/171.jpg",
+						text:"服装店",
+						title:"Lily Allen - Never Gonna Happen"
+					}
+					],
+				theme:[{
+					src:"../img-radio/KTV.jpg",
+					text:"KTV必点曲",
+					title:"黄小琥-重来"
+					},{
+					src:"../img-radio/15.jpg",
+					text:"网络红歌",
+					title:"潘柯夫、王嘉诚、蘑菇 - 哈尼么么哒"
+					},{
+						src:"../img-radio/16.jpg",
+						text:"中文经典",
+						title:"梁咏琪 - 新鲜"
+					},{
+						src:"../img-radio/17.jpg",
+						text:"伤感网络情歌",
+						title:"王思妍 - 某一天"
+					},{
+						src:"../img-radio/18.jpg",
+						text:"最爱成名曲",
+						title:"张敬轩 - 吻得太逼真"
+					},{
+						src:"../img-radio/19.jpg",
+						text:"酷狗热歌",
+						title:"郑凯 - 好久不见"
+					},{
+						src:"../img-radio/20.jpg",
+						text:"那年MP3里的歌",
+						title:"庾澄庆 - 静静的"
+					},{
+						src:"../img-radio/21.jpg",
+						text:"店铺",
+						title:"江映蓉 - 热门花招"
+					},{
+						src:"../img-radio/22.jpg",
+						text:"老情歌",
+						title:"黄凯芹 - 偶然"
+					},{
+						src:"../img-radio/23.jpg",
+						text:"热评100W+歌曲",
+						title:"刘子璇 - 嘴巴嘟嘟"
+					},{
+						src:"../img-radio/24.jpg",
+						text:"世界及热门单曲",
+						title:"Florence Welch、Calvin Harris - Sweet Nothing"
+					},{
+						src:"../img-radio/25.jpg",
+						text:"情歌对唱",
+						title:"吉娜、金志文 - 一个人的城市"
+					},{
+						src:"../img-radio/26.jpg",
+						text:"酷狗新歌",
+						title:"Passenger - Remember To Forget"
+					},{
+						src:"../img-radio/33.jpg",
+						text:"由你音乐榜",
+						title:"张紫宁 - 不爱而别"
+					},{
+						src:"../img-radio/35.jpg",
+						text:"神曲",
+						title:"王麟 - QQ爱"
+					},{
+						src:"../img-radio/38.jpg",
+						text:"浓情圣诞节",
+						title:"Jaci Velasquez - Feliz Navidad"
+					},{
+						src:"../img-radio/41.jpg",
+						text:"经典影视原声",
+						title:"陈奕迅 - 时代曲"
+					},{
+						src:"../img-radio/42.jpg",
+						text:"发烧女声",
+						title:"孙露 - 从此我该怎么过"
+					},{
+						src:"../img-radio/138.jpg",
+						text:"抖音热门歌",
+						title:"孟佳 - 糖果"
+					},{
+						src:"../img-radio/139.jpg",
+						text:"321热歌现场版",
+						title:"星娅 - 后来我去北京找过你"
+					},{
+						src:"../img-radio/141.jpg",
+						text:"中文舞曲",
+						title:"Leon Bridges - Twistin´ And Groovin´"
+					},{
+						src:"../img-radio/142.jpg",
+						text:"英文舞曲",
+						title:"Sebastian Weikum - Adem"
+					},{
+						src:"../img-radio/153.jpg",
+						text:"最热影视歌曲",
+						title:"霍尊 - 九愿"
+					},{
+						src:"../img-radio/158.jpg",
+						text:"白噪音",
+						title:"White Noise 2015 - White Noise: Dual Fans"
+					},{
+						src:"../img-radio/165.jpg",
+						text:"国语热歌",
+						title:"蒋雪儿 - 真的好可惜"
+					},{
+						src:"../img-radio/166.jpg",
+						text:"欧美热歌",
+						title:"Natalia LaFourcade、Miguel - Remember Me (Dúo)"
+					},{
+						src:"../img-radio/171.jpg",
+						text:"服装店",
+						title:"Lily Allen - Never Gonna Happen"
+					}
+					],
+				styles:[{
+						src:"../img-radio/40.jpg",
+						text:"轻音乐",
+						title:"李欣芸 - Lalu岛上的茄苳树王"
+					},{
+						src:"../img-radio/70.jpg",
+						text:"草原风",
+						title:"央金兰泽 - 布达拉"
+					},{
+						src:"../img-radio/71.jpg",
+						text:"流行",
+						title:"张玉华 - 属于自己"
+					},{
+						src:"../img-radio/72.jpg",
+						text:"民歌",
+						title:"李双江 - 明月几时有"
+					},{
+						src:"../img-radio/75.jpg",
+						text:"乡村音乐",
+						title:"Clay Walker - What´s It To You"
+					},{
+						src:"../img-radio/76.jpg",
+						text:"R&B",
+						title:"Justin Bieber、Usher - The Christmas Song"
+					},{
+						src:"../img-radio/77.jpg",
+						text:"摇滚",
+						title:"达达 - 暴雨"
+					},{
+						src:"../img-radio/79.jpg",
+						text:"爵士",
+						title:"Norah Jones - Little Room"
+					},{
+						src:"../img-radio/82.jpg",
+						text:"蒸汽波",
+						title:"Da Brat - Funkdafied"
+					},{
+						src:"../img-radio/83.jpg",
+						text:"民谣",
+						title:"Sting - Shape Of My Heart"
+					},{
+						src:"../img-radio/84.jpg",
+						text:"说唱",
+						title:"Sean Kingston - Kingston"
+					},{
+						src:"../img-radio/125.jpg",
+						text:"古典音乐",
+						title:"Classical Artists - Salut Damour"
+					},{
+						src:"../img-radio/130.jpg",
+						text:"布鲁斯",
+						title:"Led Zeppelin - Night Flight"
+					},{
+						src:"../img-radio/143.jpg",
+						text:"新民歌",
+						title:"龚玥 - 太湖美"
+					}
+				],
+				language:[
+					{
+						src:"../img-radio/85.jpg",
+						text:"百听不厌英文歌",
+						title:"Beyoncé - If I Were a Boy"
+					},{
+						src:"../img-radio/86.jpg",
+						text:"怀旧粤语",
+						title:"张学友 - 望月"
+					},{
+						src:"../img-radio/87.jpg",
+						text:"粤语",
+						title:"薛凯琪 - 小黑与我"
+					},{
+						src:"../img-radio/88.jpg",
+						text:"欧美",
+						title:"*NSYNC - This I Promise You"
+					},{
+						src:"../img-radio/89.jpg",
+						text:"怀旧华语",
+						title:"张学友 - 心碎了无痕"
+					},{
+						src:"../img-radio/90.jpg",
+						text:"闽南语",
+						title:"群星 - 面子问题"
+					},{
+						src:"../img-radio/91.jpg",
+						text:"韩语",
+						title:"刘智爱 - Delight"
+					},{
+						src:"../img-radio/92.jpg",
+						text:"国语",
+						title:"陶喆 - Melody"
+					},{
+						src:"../img-radio/93.jpg",
+						text:"日语",
+						title:"田村ゆかり - Endless Story"
+					},{
+						src:"../img-radio/94.jpg",
+						text:"法语",
+						title:"Элджей - Ультрафиолетовая лампа"
+					},{
+						src:"../img-radio/95.jpg",
+						text:"泰语",
+						title:"เสือ ธนพล - รักเดียวใจเดียว"
+					},{
+						src:"../img-radio/96.jpg",
+						text:"印度语",
+						title:"Anup Jalota - Roop Dekhe Tor Pagar Holo"
+					},{
+						src:"../img-radio/97.jpg",
+						text:"俄语",
+						title:"Элджей - Ультрафиолетовая лампа"
+					},{
+						src:"../img-radio/98.jpg",
+						text:"德语",
+						title:"EMMA6 - Kapitulieren"
+					},{
+						src:"../img-radio/99.jpg",
+						text:"意大利语",
+						title:"Laura Pausini - E.STA.A.TE"
+					},{
+						src:"../img-radio/100.jpg",
+						text:"客家语",
+						title:"邱廉钦 - 摇篮曲"
+					},{
+						src:"../img-radio/101.jpg",
+						text:"西班牙语",
+						title:"Morat - Cuánto Me Duele"
+					},
+				],
+				crowd:[{
+					src:"../img-radio/66.jpg",
+						text:"90后",
+						title:"金莎 - 星月神话"
+					},{
+						src:"../img-radio/67.jpg",
+						text:"80后",
+						title:"刘嘉玲、张信哲 - 有一点动心"
+					},{
+						src:"../img-radio/68.jpg",
+						text:"70后",
+						title:"BEYOND - 逝去日子"
+					},{
+						src:"../img-radio/69.jpg",
+						text:"00后",
+						title:"本兮 - 海誓山盟亦会分开"
+					}
+				],
+				place:[{
+					src:"../img-radio/44.jpg",
+						text:"广场舞",
+						title:"火风 - 大花轿"
+					},{
+						src:"../img-radio/45.jpg",
+						text:"咖啡厅",
+						title:"陈奕迅 - 心的距离"
+					},{
+						src:"../img-radio/46.jpg",
+						text:"一个人",
+						title:"袁咏琳 - 把伤心打碎"
+					},{
+						src:"../img-radio/47.jpg",
+						text:"工作加油曲",
+						title:"李宇春 - Why Me"
+					},{
+						src:"../img-radio/48.jpg",
+						text:"睡前",
+						title:"Peter Jeremias - Stardust"
+					},{
+						src:"../img-radio/49.jpg",
+						text:"学习",
+						title:"Josh Rouse - Flight Attendant"
+					},{
+						src:"../img-radio/50.jpg",
+						text:"散步",
+						title:"林俊杰 - 一个又一个"
+					},{
+						src:"../img-radio/51.jpg",
+						text:"清吧",
+						title:"Mathieu Edward - Entre Toi Et Moi"
+					},{
+						src:"../img-radio/52.jpg",
+						text:"在路上",
+						title:"张学友 - 三分拍"
+					},{
+						src:"../img-radio/53.jpg",
+						text:"驾驶",
+						title:"陈楚生 - Sing"
+					},{
+						src:"../img-radio/54.jpg",
+						text:"打游戏",
+						title:"Martin Garrix、Pierce Fulton、Mike Shinoda - Waiting For Tomorrow"
+					},{
+						src:"../img-radio/55.jpg",
+						text:"聚会暖场",
+						title:"罗志祥 - 爱投罗网"
+					},{
+						src:"../img-radio/56.jpg",
+						text:"婚礼",
+						title:"Rihanna - California King Bed"
+					},{
+						src:"../img-radio/57.jpg",
+						text:"午休",
+						title:"孙燕姿 - 同类"
+					},{
+						src:"../img-radio/58.jpg",
+						text:"安静",
+						title:"林俊杰 - 她说"
+					},{
+						src:"../img-radio/59.jpg",
+						text:"起床",
+						title:"Bruno Mars - Runaway Baby"
+					},{
+						src:"../img-radio/137.jpg",
+						text:"轻松唤醒",
+						title:""
+					},{
+						src:"../img-radio/148.jpg",
+						text:"冥想",
+						title:"Andrew Fitzgerald - Soothing Blue"
+					},{
+						src:"../img-radio/150.jpg",
+						text:"自然",
+						title:"纯音乐 - 森林之馈赠"
+					},{
+						src:"../img-radio/159.jpg",
+						text:"雨天",
+						title:"Coldplay - In My Place"
+					}
+				],
+				mood:[{
+					src:"../img-radio/58.jpg",
+						text:"安静",
+						title:"林俊杰 - 她说"
+				},{
+					src:"../img-radio/60.jpg",
+					text:"轻松",
+					title:"梁静茹 - 慢慢来比较快"
+				},{
+					src:"../img-radio/61.jpg",
+					text:"伤感",
+					title:"吴若希 - 爱要撑下去"
+				},{
+					src:"../img-radio/62.jpg",
+					text:"寂寞",
+					title:"孙燕姿 - 开始懂了"
+				},{
+					src:"../img-radio/63.jpg",
+					text:"甜蜜",
+					title:"山野(李昊瀚) - 如果爱能早些说出来"
+				},{
+					src:"../img-radio/64.jpg",
+					text:"兴奋",
+					title:"The Fratellis - Tell Me A Lie"
+				},{
+					src:"../img-radio/65.jpg",
+					text:"思念",
+					title:"周杰伦 - 最长的电影"
+				}
+				]
+				}
+			})
+		</script>
+		
+	</body>
+</html>

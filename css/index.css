@@ -876,7 +876,17 @@ container>.foot>.dowload>li>a:hover{
 .content>.link>a:hover{
 	color: #009AF3;
 }
-
+.backTop{
+	position: fixed;
+	z-index: 5;
+	bottom: 100px;
+	right: 100px;
+	height: 50px;
+	width: 50px;
+	background-image: url(../img/sprite.png);
+	background-position: 0 755px;
+	cursor: pointer;
+}
 
 
 

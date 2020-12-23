@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>账号被盗</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40"></rect>
+    </defs>
+    <g id="客服系统web2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1客服系统首页ok" transform="translate(-839.000000, -508.000000)">
+            <g id="自助服务" transform="translate(0.000000, 400.000000)">
+                <g id="账号被盗" transform="translate(817.000000, 88.000000)">
+                    <g transform="translate(20.000000, 20.000000)">
+                        <g id="盾牌" transform="translate(2.000000, 0.000000)" fill="#00CC77">
+                            <path d="M34.3336627,6.19067957 C28.9185079,5.9457076 23.7222236,4.09749039 18.898886,0.645701726 L17.9780407,0 L17.0571954,0.645701726 C12.2777764,4.07522762 7.1034915,5.9457076 1.71025592,6.1684168 L0,6.1684168 L0,17.7318531 C0,28.3981638 7.23516699,37.5280992 17.6054151,39.9331302 L18.0658779,40 L18.3945849,39.9331302 C28.764833,37.5280992 36,28.3981638 36,17.7318531 L36,6.1684168 L34.3336627,6.19067957 Z M18.0000401,37.9956988 C8.44080067,35.7690146 1.81969111,27.418276 1.81969111,17.6649832 L1.81969111,7.92741986 C7.54195484,7.6824479 12.9574307,5.74534272 17.9561216,2.18240333 C22.9770527,5.74534272 28.3922074,7.6824479 34.0924717,7.92741986 L34.1144711,17.6426389 C34.1363903,27.418276 27.4933616,35.7913589 18.0000401,37.9956988 Z" id="Fill-2"></path>
+                        </g>
+                        <rect id="Rectangle-22" fill="#00CC77" x="19" y="18" width="2" height="12" rx="1"></rect>
+                        <circle id="Oval-11" fill="#00CC77" cx="20" cy="14" r="2"></circle>
+                        <g id="Rectangle-21" opacity="0">
+                            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#979797" stroke-width="1" x="0.5" y="0.5" width="39" height="39"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -19,7 +19,7 @@
 			</div>
 			<!-- 列表 -->
 			<ul>
-				<li><a href="">客服中心</a></li>
+				<li><a href="html/01 客服中心.html">客服中心</a></li>
 				<li><a href="">招贤纳士</a></li>
 				<li><a href="">会员中心</a></li>
 				<li style="border-right: 1px solid #CCCCCC;"><a href="">商务合作</a></li>
@@ -32,13 +32,13 @@
 				<div class="head_nav">
 					<ul class="left">
 						<li style="background: #0c8ed9;"><a href="">首页</a></li>
-						<li><a href="">榜单</a></li>
-						<li><a href="">下载客户端</a></li>
+						<li><a href="html/酷狗榜单.html">榜单</a></li>
+						<li><a href="html/11.html">下载客户端</a></li>
 						<li class="more">
 							<a href="">更多&nbsp;<span class="iconfont icon-xiajiantou xiajiantou" style="display: inline-block;"></span></a>
 							<ul>
-								<li><a href="">电台</a></li>
-								<li><a href="">MV&nbsp;</a></li>
+								<li><a href="html/radios.html">电台</a></li>
+								<li><a href="html/MusicVideo.html">MV&nbsp;</a></li>
 								<li><a href="">歌单</a></li>
 								<li><a href="">歌手</a></li>
 							</ul>
@@ -1692,6 +1692,8 @@
 				<a href="">爱美网</a>
 			</div>
 		</div>
+		<!-- 返回头部 -->
+		<div class="backTop"></div>
 		<!-- 底部 -->
 		<div class="footer">
 			<div class="footer-top">
@@ -1820,6 +1822,18 @@
 				now_singer_ul.eq($(this).index()).show().siblings(".list_singer>ul").hide();
 			})
 			
+			
+			$(window).scroll(function(){
+				// console.log($(window).scrollTop());
+				if($(window).scrollTop()>525){
+					$(".backTop").show();
+				}else{
+					$(".backTop").hide();
+				}
+			})
+			$(".backTop").click(function(){
+				$("body,html").animate({"scrollTop":'0px'},1000);
+			})
 			// 阻止默认事件
 			// $("a").click(function(event){
 			//   event.preventDefault();
