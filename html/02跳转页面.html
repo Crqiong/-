@@ -3,459 +3,462 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<meta charset="utf-8">
+		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css"/>
 		<script src="../js/jquery-3.5.1.js" type="text/javascript">
-			
-		</script>
-		
-		<style>
-			*{
-				margin:0px;
-				padding: 0px;
-			}
-			body,html{
-				max-width: 1350px;
-				min-width: 1850px;
-			}
-			a{
-				color: #000000;
-				text-decoration: none;
-			}
-			/* 头部 */
-			.top{
-				width: 100%;
-				height: 60px;
-				background-color: #494949;
-				position: relative;
-			}
-			.top>.top_one>a{
-				margin-left: 250px;
-			}
-			.top>ul{
-				position: absolute;
-				right: 0px;
-				right: 220px;
-				bottom: 22px; */
-				}
-			.top>ul>li{
-				list-style: none;
-				float: left;
-				margin-left: 30px;
-				/* background-color: #0000FF; */
-				}
-			/* 导航栏 */
-			nav{
-				width: 100%;
-				height: 80px;
-				/* background-color: rosybrown; */
-				position: relative;
-			}
-			
-			nav>.nav_one{
-				line-height: 80px;
-				margin-left: 250px;
-				position: relative;
-			}
-			nav>.nav_two>ul{
-				position: absolute;
-				left: 360px;
-				top: 0px;
-				line-height: 80px;
-			}
-			nav>.nav_two>ul>li{
-				float: left;
-				list-style: none;
-				margin-left: 40px;
-				color: #666;
-			}
-			nav>.nav_two>ul>li:hover{
-				color:#65d7b3;
-			}
-			nav>.nav_three{
-				width: 400px;
-				height: 40px;
-				/* background: #0000FF; */
-				position: absolute;
-				right: 100px;
-				top:15px
-			}
-			nav>.nav_three>p{
-				text-align: center;
-				height: 36px;
-				width: 100px;
-				line-height: 36px;
-				position: absolute;
-				right: 10px;
-				top:1px;
-				border: 1px solid #65d7b3;
-				color: #65d7b3;
-				font-weight: 200;
-				
-			}
-			nav>.nav_three>.nav_left{
-				width: 50px;
-				height: 38px;
-				/* background-color: #000000; */
-				position: absolute;
-				right: 145px;
-				top: 0px;
-			}
-			
-			
-			
-			/* 轮播图 */
-			.rotation{
-				width: 100%;
-				height: 350px;
-				background-color: purple;
-			}
-			
-			
-			/* ----------------------- */
-			 .swiper-container {
-			      width: 100%;
-			      height: 100%;
-			    }
-			
-			    .swiper-slide {
-			      text-align: center;
-			      font-size: 18px;
-			      background: #fff;
-			
-			      /* Center slide text vertically */
-			      display: -webkit-box;
-			      display: -ms-flexbox;
-			      display: -webkit-flex;
-			      display: flex;
-			      -webkit-box-pack: center;
-			      -ms-flex-pack: center;
-			      -webkit-justify-content: center;
-			      justify-content: center;
-			      -webkit-box-align: center;
-			      -ms-flex-align: center;
-			      -webkit-align-items: center;
-			      align-items: center;
-			    }
-			/* ----------------------- */
-			
-			
-			
-			/* 轮播下的自助文字 */
-			.samll{
-				box-sizing: border-box;
-				padding: 0px 200px;
-				width: 100%;
-				height: 70px;
-				background-color: rgba(0,0,0,.02);
-				text-align: center;
-				line-height: 70px;
-			}
-			.samll>h2{
-				font-weight:200;
-				font-size: 30px; 
-			}
-			/* 自助服务事件 */
-			.event{
-				width: 100%;
-				height: 380px;
-				/* margin-top: 40px; */
-				padding:0px 360px;
-				box-sizing: border-box;
-				/* background-color: red; */
-				text-align: center;
-				min-width: 1600px;
-			}
-			.event>ul>li{
-				margin-top: 20px;
-				width: 100px;
-				height: 100px;
-				border: 1px solid rgba(101,215,179,.38);
-				list-style: none;
-				float: left;
-				border-radius: 50%;
-				margin-left: 80px;
-				line-height: 120px;
-				margin-top: 60px;
-				position: relative;
-				transition: all .3s;
-			}
-			.event>ul>li:hover{
-				border: 1px solid #65d7b3;
-			}
-			.event>ul>li>a>strong{
-				position: absolute;
-				top:60px;
-				left: 20px;
-				color: #333;
-				font-size: 18px;
-			}
-			.event>ul>li>a>.event_strong{
-				position: absolute;
-				top:60px;
-				left: -8px;
-			}
-			.event>ul>li>a>.five{
-				position: absolute;
-				top:60px;
-				left:5px;
-			}
-			.event>ul>li>a>img{
-				transition: all .3s;
-			}
-			/* 图标中心点放大 */
-			.event>ul>li:hover>a>img{
-				transform-origin: center center;
-				transform: scale(1.3);
-			}
-			/* 动态公告 */
-			.small_two{
-				box-sizing: border-box;
-				padding: 0px 200px;
-				width: 100%;
-				height: 70px;
-				background-color: rgba(0,0,0,.02);
-				text-align: center;
-				line-height: 70px;
-				min-width: 1400px;
-			}
-			.small_two>h2{
-				font-weight:200;
-				font-size: 30px;
-			}
-			/* 动态公告下的文字 */
-			.notice{
-				width: 100%;
-				height: 220px;
-				/* margin-top: 40px; */
-				padding:0px 130px;
-				box-sizing: border-box;
-				/* background-color: red; */
-				text-align: center;
-				/* min-width: 1400px; */
-				}
-				/* 左边 */
-				.notice>.notice_left{
-					width: 520px;
-					height: 220px;
-					/* background-color: palevioletred; */
-					float: left;
-				}
-				.notice>.notice_left>ul>li{
-					list-style: none;
-					margin-top: 9px;
-					text-align: left;
-					height: 35px;
-					/* background-color: #0000FF; */
-					font-size: 14px;
-					color: #333;
-					line-height: 35px;
-				}
-				.notice>.notice_left>ul>li:before{
-					content:"•";
 					
-					}
-				.notice>.notice_left>ul>li>a:hover{
-					color: #65d7b3;
-					}
-				.notice>.notice_left>ul>li>span:hover{
-					color: #65d7b3;
-				}
-				.notice>.notice_left>ul>li>span{
-					float: right;
-					margin-right: 30px;
-					color: #999;
-					font-size: 12px;
-					font-style: normal;
-					font-family: monospace;
-				}
+				</script>
 				
-				/* 右边 */
-				.notice>.notice_right{
-					width: 520px;
+				<style>
+					*{
+						margin:0px;
+						padding: 0px;
+					}
+					a{
+						color: #000000;
+						text-decoration: none;
+					}
+					/* 头部 */
+					.top{
+						width: 100%;
+						height: 60px;
+						background-color: #494949;
+						position: relative;
+						margin: 0px auto;
+					}
+					.top>.top_one>a{
+						margin-left: 250px;
+					}
+					.top>ul{
+						position: absolute;
+						right: 0px;
+						right: 220px;
+						bottom: 22px; */
+						}
+					.top>ul>li{
+						list-style: none;
+						float: left;
+						margin-left: 30px;
+						/* background-color: #0000FF; */
+						}
+					/* 导航栏 */
+					nav{
+						width: 100%;
+						height: 80px;
+						/* background-color: rosybrown; */
+						position: relative;
+					}
+					
+					nav>.nav_one{
+						line-height: 80px;
+						margin-left: 250px;
+						position: relative;
+					}
+					nav>.nav_two>ul{
+						position: absolute;
+						left: 360px;
+						top: 0px;
+						line-height: 80px;
+					}
+					nav>.nav_two>ul>li{
+						float: left;
+						list-style: none;
+						margin-left: 40px;
+						color: #666;
+					}
+					nav>.nav_two>ul>li:hover{
+						color:#65d7b3;
+					}
+					nav>.nav_three{
+						width: 400px;
+						height: 40px;
+						/* background: #0000FF; */
+						position: absolute;
+						right: 100px;
+						top:15px
+					}
+					nav>.nav_three>p{
+						text-align: center;
+						height: 36px;
+						width: 100px;
+						line-height: 36px;
+						position: absolute;
+						right: 10px;
+						top:1px;
+						border: 1px solid #65d7b3;
+						color: #65d7b3;
+						font-weight: 200;
+						
+					}
+					nav>.nav_three>.nav_left{
+						width: 50px;
+						height: 38px;
+						/* background-color: #000000; */
+						position: absolute;
+						right: 145px;
+						top: 0px;
+					}
+					/* 中间部分 */
+					section{
+						width: 100%;
+					/* 	height: 1800px; */
+						/* background-color: #0000FF; */
+						/* border: 1px solid #000000; */
+						}
+					section>.rotation{
+						width: 100%;
+						margin: 10px auto;
+						/* background-color: purple; */
+						}
+					section>.samll{
+						box-sizing: border-box;
+						width: 100%;
+						height: 70px;
+						background-color: rgba(0,0,0,.02);
+						text-align: center;
+						line-height: 70px;
+						margin: 0px auto;
+						}
+					section>.samll>h2{
+							font-weight:200;
+							font-size: 30px; 
+							}
+					/* 轮播图 */
+					section>.rotation{
+						width: 100%;
+						/* background-color: purple; */
+						text-align: center;
+						
+					}	
+					/* ----------------------- */
+					section>.rotation>.swiper-container {
+					      width: 100%;
+					      height: 100%;
+						 
+					    }
+					section>.rotation>.swiper-slide {
+					      text-align: center;
+					      font-size: 18px;
+					      background: #fff;
+					
+					      /* Center slide text vertically */
+					      display: -webkit-box;
+					      display: -ms-flexbox;
+					      display: -webkit-flex;
+					      display: flex;
+					      -webkit-box-pack: center;
+					      -ms-flex-pack: center;
+					      -webkit-justify-content: center;
+					      justify-content: center;
+					      -webkit-box-align: center;
+					      -ms-flex-align: center;
+					      -webkit-align-items: center;
+					      align-items: center;
+					    }
+					/* ----------------------- */
+					
+					
+					
+					
+					
+					
+					
+					/* 自助服务事件 */
+					section>.event{
+						width: 100%;
+						height: 380px;
+						box-sizing: border-box;
+						text-align: center;
+						/* background-color: #0000FF; */
+					}
+					section>.event>ul>li{
+						margin-top: 20px;
+						width: 100px;
+						height: 100px;
+						border: 1px solid rgba(101,215,179,.38);
+						list-style: none;
+						float: left;
+						border-radius: 50%;
+						margin-left: 120px;
+						line-height: 120px;
+						margin-top: 60px;
+						position: relative;
+						transition: all .3s;
+					}
+					section>.event>ul>li:hover{
+						border: 1px solid #65d7b3;
+									}
+					section>.event>ul>li>a>strong{
+						position: absolute;
+						top:60px;
+						left: 20px;
+						color: #333;
+						font-size: 18px;
+								}
+					section>.event>ul>li>a>.event_strong{
+						position: absolute;
+						top:60px;
+						left: -8px;}
+					section>.event>ul>li>a>.five{
+						position: absolute;
+						top:60px;
+						left:5px;
+						}
+					section>.event>ul>li>a>img{
+						transition: all .3s;
+									}
+					/* 图标中心点放大 */
+					section>.event>ul>li:hover>a>img{
+						transform-origin: center center;
+						transform: scale(1.3);
+					}
+					/* 动态公告 */
+					section>.small_two{
+						box-sizing: border-box;
+						width: 100%;
+						height: 70px;
+						background-color: rgba(0,0,0,.02);
+						text-align: center;
+						line-height: 70px;
+						}
+						
+					section>.small_two>h2{
+						font-weight:200;
+						font-size: 30px;
+					}
+					/* 动态公告下的文字 */
+					section>.notice{
+						width: 100%;
 						height: 220px;
-						/* background-color: green; */
-						float: right;
-					}
-				.notice>.notice_right>ul>li{
-					list-style: none;
-					margin-top: 9px;
-					text-align: left;
-					height: 35px;
-					/* background-color: #0000FF; */
-					font-size: 14px;
-					color: #333;
-					line-height: 35px;
-				}
-				.notice>.notice_right>ul>li:before{
-					content: "•";
-				}
-				.notice>.notice_right>ul>li>a:hover{
-					color: #65d7b3;
-					}
-				.notice>.notice_right>ul>li>span:hover{
-					color: #65d7b3;
-				}
-				.notice>.notice_right>ul>li>span{
-					float: right;
-					margin-right: 30px;
-					font-size: 12px;
-					font-style: normal;
-					font-family: monospace;
-				}
-				.ash{
-					background-color: rgba(0,0,0,.03);
-					}
-				/* 热点问题 */
-			.small_three{
-				box-sizing: border-box;
-				padding: 0px 200px;
-				width: 100%;
-				height: 50px;
-				margin-top: 20px;
-				background-color: rgba(0,0,0,.02);
-				/* background-color: #0000FF; */
-				text-align: center;
-				line-height: 50px;
-			}
-			.small_three>h2{
-				font-weight:200;
-				font-size: 30px; 
-				}
-			/* 热点问题下的问题 */
-			.hotspot{
-				width: 100%;
-				height: 450px;
-				/* margin-top: 40px; */
-				padding:0px 130px;
-				box-sizing: border-box;
-				/* background-color: red; */
-				text-align: center;
-			}
-			/* 左边 */
-			.hotspot>.hotspot_left{
-				width: 520px;
-				height: 450px;
-				/* background-color: palevioletred; */
-				float: left;
-			}
-			.hotspot>.hotspot_left>ul>li{
-				list-style: none;
-				margin-top: 10px;
-				text-align: left;
-				/* background-color: #0000FF; */
-				font-size: 14px;
-				height: 35px;
-				line-height: 35px;
-			}
-			.hotspot>.hotspot_left>ul>li:before{
-				content: "•";
-				font-size: 12px;
-			}
-			.hotspot>.hotspot_left>ul>li>a:hover{
-				color: #65d7b3;
-			}
-			/* 右边 */
-			.hotspot>.hotspot_right{
-				width: 520px;
-				height: 450px;
-				/* background-color: palegreen; */
-				float: right;
-			}
-			.hotspot>.hotspot_right>ul>li{
-				list-style: none;
-				margin-top: 10px;
-				text-align: left;
-				/* background-color: #0000FF; */
-				font-size: 14px;
-				height: 35px;
-				line-height: 35px;
-			}
-			.hotspot>.hotspot_right>ul>li:before{
-				content: "•";
-			}
-			.hotspot>.hotspot_right>ul>li>a:hover{
-				color: #65d7b3;
-			}
-			/* 底部 */
-			.bottom{
-				width: 100%;
-				height: 250px;
-				/* margin-top: 40px; */
-				padding:0px 100px;
-				box-sizing: border-box;
-				background-color: #F3F3F3;
-				/* text-align: center; */
-				margin-top: 60px;
-				text-align: center;
-				}
-			/* 第一个 */
-			.bottom>.bottom_one{
-				width:180px ;
-				height: 180px;
-				margin-top: 40px;
-				/* background-color: #0000FF; */
-				float: left;
-				text-align: center;
-			}
-			.bottom>.bottom_one>img{
-				margin-top: 20px;
-				margin-left: 50px;
-			}
-			/* 第二个 */
-			.bottom>.bottom_two{
-				width: 320px;
-				height: 180px;
-				/* background-color: #007D61; */
-				float: left;
-				margin-top: 40px;
-			}
-			.bottom>.bottom_two>ul>li{
-				list-style: none;
-				/* margin-top: 22px; */
-				text-align: left;
-				/* background-color: #0000FF; */
-				font-size: 14px;
-				color: #8f8f8f;
-			}
-			.bottom>.bottom_two>ul>li>a{
-				color: #8f8f8f;
-				}
-			/* 第三个 */
-			.bottom>.bottom_three{
-				width: 320px;
-				/* background-color: #0077AA; */
-				height: 180px;
-				float: left;
-				margin-top: 40px;
-			}
-			.bottom>.bottom_three>ul>li{
-				list-style: none;
-				/* margin-top: 22px; */
-				text-align: left;
-				/* background-color: #0000FF; */
-				font-size: 14px;
-				color: #8f8f8f;
-			}
-			.bottom>.bottom_three>ul>li>a{
-				color: #8f8f8f;;
-			}
-			/* 第四个 */
-			.bottom>.bottom_four{
-				width: 331px;
-				height: 180px;
-				margin-top: 40px;
-				/* background-color: #0000FF; */
-				float: right;
-			}
-			.bottom>.bottom_four>span{
-				margin-left: 10px;
-				}
-		</style>
+						box-sizing: border-box;
+						text-align: center;
+						}
+						/* 左边 */
+						section>.notice>.notice_left{
+							width: 520px;
+							height: 220px;
+							/* background-color: palevioletred; */
+							float: left;
+							margin-left: 120px;
+						}
+						section>.notice>.notice_left>ul>li{
+							list-style: none;
+							margin-top: 9px;
+							text-align: left;
+							height: 35px;
+							/* background-color: #0000FF; */
+							font-size: 14px;
+							color: #333;
+							line-height: 35px;
+						}
+						section>.notice>.notice_left>ul>li:before{
+							content:"•";
+							
+							}
+						section>.notice>.notice_left>ul>li>a:hover{
+							color: #65d7b3;
+							}
+						section>.notice>.notice_left>ul>li>span:hover{
+							color: #65d7b3;
+						}
+						section>.notice>.notice_left>ul>li>span{
+							float: right;
+							margin-right: 30px;
+							color: #999;
+							font-size: 12px;
+							font-style: normal;
+							font-family: monospace;
+						}
+						
+						/* 右边 */
+						section>.notice>.notice_right{
+							width: 520px;
+							height: 220px;
+							/* background-color: green; */
+							float: right;
+							margin-right: 120px;
+							}
+						section>.notice>.notice_right>ul>li{
+							list-style: none;
+							margin-top: 9px;
+							text-align: left;
+							height: 35px;
+							/* background-color: #0000FF; */
+							font-size: 14px;
+							color: #333;
+							line-height: 35px;
+						}
+						section>.notice>.notice_right>ul>li:before{
+							content: "•";
+						}
+						section>.notice>.notice_right>ul>li>a:hover{
+							color: #65d7b3;
+							}
+						section>.notice>.notice_right>ul>li>span:hover{
+							color: #65d7b3;
+						}
+						section>.notice>.notice_right>ul>li>span{
+							float: right;
+							margin-right: 30px;
+							font-size: 12px;
+							font-style: normal;
+							font-family: monospace;
+						}
+						section>.ash{
+							background-color: rgba(0,0,0,.03);
+							}
+						/* 热点问题 */
+						section>.small_three{
+							box-sizing: border-box;
+							width: 100%;
+							height: 50px;
+							margin-top: 20px;
+							background-color: rgba(0,0,0,.02);
+							/* background-color: #0000FF; */
+							text-align: center;
+							line-height: 50px;
+						}
+						section>.small_three>h2{
+							font-weight:200;
+							font-size: 30px; 
+							}
+						/* 热点问题下的问题 */
+						section>.hotspot{
+							width: 100%;
+							height: 450px;
+							/* margin-top: 40px; */
+							box-sizing: border-box;
+							/* background-color: red; */
+							text-align: center;
+						}
+						/* 左边 */
+						section>.hotspot>.hotspot_left{
+							width: 520px;
+							height: 450px;
+							/* background-color: palevioletred; */
+							float: left;
+							margin-left: 120px;
+						}
+						section>.hotspot>.hotspot_left>ul>li{
+							list-style: none;
+							margin-top: 10px;
+							text-align: left;
+							/* background-color: #0000FF; */
+							font-size: 14px;
+							height: 35px;
+							line-height: 35px;
+						}
+						section>.hotspot>.hotspot_left>ul>li:before{
+							content: "•";
+							font-size: 12px;
+						}
+						section>.hotspot>.hotspot_left>ul>li>a:hover{
+							color: #65d7b3;
+						}
+						/* 右边 */
+						section>.hotspot>.hotspot_right{
+							width: 520px;
+							height: 450px;
+							/* background-color: palegreen; */
+							float: right;
+							margin-right: 120px;
+						}
+						section>.hotspot>.hotspot_right>ul>li{
+							list-style: none;
+							margin-top: 10px;
+							text-align: left;
+							/* background-color: #0000FF; */
+							font-size: 14px;
+							height: 35px;
+							line-height: 35px;
+						}
+						section>.hotspot>.hotspot_right>ul>li:before{
+							content: "•";
+						}
+						section>.hotspot>.hotspot_right>ul>li>a:hover{
+							color: #65d7b3;
+						}
+						/* 底部 */
+						.bottom{
+							width: 100%;
+							height: 250px;
+							/* margin-top: 40px; */
+							padding:0px 100px;
+							box-sizing: border-box;
+							background-color: #F3F3F3;
+							/* text-align: center; */
+							margin-top: 60px;
+							text-align: center;
+							}
+						/* 第一个 */
+						.bottom>.bottom_one{
+							width:180px ;
+							height: 180px;
+							margin-top: 40px;
+							/* background-color: #0000FF; */
+							float: left;
+							text-align: center;
+						}
+						.bottom>.bottom_one>img{
+							margin-top: 20px;
+							margin-left: 50px;
+						}
+						/* 第二个 */
+						.bottom>.bottom_two{
+							width: 320px;
+							height: 180px;
+							/* background-color: #007D61; */
+							float: left;
+							margin-top: 40px;
+						}
+						.bottom>.bottom_two>ul>li{
+							list-style: none;
+							/* margin-top: 22px; */
+							text-align: left;
+							/* background-color: #0000FF; */
+							font-size: 14px;
+							color: #8f8f8f;
+						}
+						.bottom>.bottom_two>ul>li>a{
+							color: #8f8f8f;
+							}
+						/* 第三个 */
+						.bottom>.bottom_three{
+							width: 320px;
+							/* background-color: #0077AA; */
+							height: 180px;
+							float: left;
+							margin-top: 40px;
+						}
+						.bottom>.bottom_three>ul>li{
+							list-style: none;
+							/* margin-top: 22px; */
+							text-align: left;
+							/* background-color: #0000FF; */
+							font-size: 14px;
+							color: #8f8f8f;
+						}
+						.bottom>.bottom_three>ul>li>a{
+							color: #8f8f8f;;
+						}
+						/* 第四个 */
+						.bottom>.bottom_four{
+							width: 331px;
+							height: 180px;
+							margin-top: 40px;
+							/* background-color: #0000FF; */
+							float: right;
+						}
+						.bottom>.bottom_four>span{
+							margin-left: 10px;
+							}
+					</style>
 	</head>
 	<body>
 		<div class="top">
 			<div class="top_one">
-				<a href=""><img src="../img/room_title-74f408.png" ></a>
+				<a href=""><img src="img/room_title-74f408.png" ></a>
 			</div>
 			<ul>
 			<li><a href="">登录</a></li>
@@ -482,160 +485,161 @@
 				<p>我的问题</p>
 			</div>
 		</nav>
-		<!-- 轮播图 -->
-		<div class="rotation">
-			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-			      <div class="swiper-slide"><img src="../img/2.1.jpg" ></div>
-			      <div class="swiper-slide"><img src="../img/2.2.jpg" ></div>
-			      <div class="swiper-slide"><img src="../img/2.3.jpg" ></div>
-			      <div class="swiper-slide"><img src="../img/2.4.jpg" ></div>
-			      <div class="swiper-slide"><img src="../img/2.5.jpg" ></div>
-			    <!--  <div class="swiper-slide">Slide 6</div>
-			      <div class="swiper-slide">Slide 7</div>
-			      <div class="swiper-slide">Slide 8</div>
-			      <div class="swiper-slide">Slide 9</div>
-			      <div class="swiper-slide">Slide 10</div> -->
-			    </div>
-			    <!-- Add Pagination -->
-			    <div class="swiper-pagination"></div>
-			  </div>
-			
-			
-		</div>
-		<div class="samll">
-			<h2>自助服务</h2>
-		</div>
-		<div class="event">
-			<ul>
-				<li><a href=""><img src="../img/3.1.svg" >
-				<strong>密码找回</strong>
-				</a>
-				</li>
-				<li><a href=""><img src="../img/3.2.svg" >
-				<strong>解绑手机</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.3.svg" >
-				<strong>被盗消费</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.4.svg" >
-				<strong class="five">充值不到账</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.5.svg" >
-				<strong style="position: absolute; left: -17px;">送礼/收礼异常</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.6.svg" >
-				<strong class="five">勋章未点亮</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.7.svg" >
-				<strong class="five">提现不到账</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.8.svg" >
-				<strong class="event_strong">直播时长丢失</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.9.svg" >
-				<strong style="position: absolute; left: -17px;" >封号/处罚申诉</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.10.svg" >
-				<strong>违规举报</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.11.svg" >
-				<strong class="event_strong">未成年人充值</strong>
-				</a></li>
-				<li><a href=""><img src="../img/3.12.svg" >
-				<strong style="position: absolute; left: 32px;">其他</strong>
-				</a></li>
-			</ul>
-		</div>
-		<!-- 动态公告文字 -->
-		<div class="small_two">
-			<h2>动态•公告</h2>
-		</div>
-		<!-- 动态公告文字下的 -->
-		<div class="notice">
-			<!-- 左边文字 -->
-			<div class="notice_left">
-				<ul>
-					<li class="ash"><a href="">2020年11月下旬艺人收益退回名单</a>
-					<span>2020/12/15</span>
-					</li>
-					<li><a href="">酷次元--“虚拟头像”开播模式使用方式</a>
-					<span>2020/12/15</span>
-					</li>
-					<li class="ash"><a href="">直播学院百万基金计划申请规则</a>
-					<span>2020/12/08</span>
-					</li>
-					<li><a href="">酷狗搞笑主播底薪扶持政策</a>
-					<span>2020/12/04</span>
-					</li>
-					<li class="ash"><a href="">2020酷狗户外主播底薪扶持政策</a>
-					<span>2020/12/04</span>
-					</li>
-				</ul>
+		<!-- 中间部分 -->
+		<section>
+			<div class="rotation">
+				<div class="rotation">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					      <div class="swiper-slide"><img src="img/2.1.jpg" ></div>
+					      <div class="swiper-slide"><img src="img/2.2.jpg" ></div>
+					      <div class="swiper-slide"><img src="img/2.3.jpg" ></div>
+					      <div class="swiper-slide"><img src="img/2.4.jpg" ></div>
+					      <div class="swiper-slide"><img src="img/2.5.jpg" ></div>
+					    <!--  <div class="swiper-slide">Slide 6</div>
+					      <div class="swiper-slide">Slide 7</div>
+					      <div class="swiper-slide">Slide 8</div>
+					      <div class="swiper-slide">Slide 9</div>
+					      <div class="swiper-slide">Slide 10</div> -->
+					    </div>
+					    <!-- Add Pagination -->
+					    <div class="swiper-pagination"></div>
+					  </div>
+					
+					
+				</div>
 			</div>
-			<!-- 右边文字 -->
-			<div class="notice_right">
-				<ul>
-					<li class="ash"><a href="">酷狗直播艺人违规处罚规则</a>
-					<span>2020/11/18</span>
-					</li>
-					<li><a href="">2020酷狗直播转/入/退会新规（Bate版）</a>
-					<span>2020/08/28</span>
-					</li>
-					<li class="ash"><a href="">酷狗小铺限售商品及违规管理规范</a>
-					<span>2020/07/29</span>
-					</li>
-					<li><a href="">酷狗直播公会入驻要求及流程</a>
-					<span>2020/04/30</span>
-					</li>
-					<li class="ash"><a href="">酷狗直播公会违规处罚规则</a>
-					<span>2020/04/30</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-		
-		<!-- 热点问题 -->
-		<div class="small_three">
-			<h2>热点问题</h2>
-		</div>
-		<!-- 热点问题文字 -->
-		<div class="hotspot">
-			<!-- 左边 -->
-			<div class="hotspot_left">
-				<ul>
-					<li class="ash"><a href="">如何申请男神，女神标签？</a></li>
-					<li><a href="">游戏直播开播教程</a></li>
-					<li class="ash"><a href="">开播指引</a></li>
-					<li><a href="">什么是财富等级</a></li>
-					<li class="ash"><a href="">什么是明星等级</a></li>
-					<li><a href="">如何申请好声音标签</a></li>
-					<li class="ash"><a href="">如何申请歌手标签</a></li>
-					<li><a href="">如何成为独家主播？</a></li>
-					<li class="ash"><a href="">如何开公会</a></li>
-					<li><a href="">如何结算收益</a></li>
-				</ul>
-			</div>
-			<!-- 右边 -->
-			<div class="hotspot_right">
-				<ul>
-					<li class="ash"><a href="">酷狗认证标签</a></li>
-					<li><a href="">新主播有推荐位么？</a></li>
-					<li class="ash"><a href="">星币和星豆的常见问题</a></li>
-					<li><a href="">如何成为主播（通过网页端签约）</a></li>
-					<li class="ash"><a href="">标签链接大集合</a></li>
-					<li><a href="">酷狗直播伴侣的使用</a></li>
-					<li class="ash"><a href="">女神标签主播招募，短视频帮你单月涨粉过万！</a></li>
-					<li><a href="">双摄像头开播网络问题解决方案</a></li>
-					<li class="ash"><a href="">教你玩转才艺PK</a></li>
-					<li><a href="">艺人如何处理开播设备为空</a></li>
-				</ul>
-			</div>
-		</div>
+			<div class="samll"><h2>自助服务</h2></div>
+			<div class="event">
+					<ul>
+						<li><a href=""><img src="img/3.1.svg" >
+						<strong>密码找回</strong>
+						</a>
+						</li>
+						<li><a href=""><img src="img/3.2.svg" >
+						<strong>解绑手机</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.3.svg" >
+						<strong>被盗消费</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.4.svg" >
+						<strong class="five">充值不到账</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.5.svg" >
+						<strong style="position: absolute; left: -17px;">送礼/收礼异常</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.6.svg" >
+						<strong class="five">勋章未点亮</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.7.svg" >
+						<strong class="five">提现不到账</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.8.svg" >
+						<strong class="event_strong">直播时长丢失</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.9.svg" >
+						<strong style="position: absolute; left: -17px;" >封号/处罚申诉</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.10.svg" >
+						<strong>违规举报</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.11.svg" >
+						<strong class="event_strong">未成年人充值</strong>
+						</a></li>
+						<li><a href=""><img src="img/3.12.svg" >
+						<strong style="position: absolute; left: 32px;">其他</strong>
+						</a></li>
+					</ul>
+				</div>
+				<div class="small_two">
+					<h2>动态•公告</h2>
+				</div>
+				<!-- 动态公告文字下的 -->
+				<div class="notice">
+					<!-- 左边文字 -->
+					<div class="notice_left">
+						<ul>
+							<li class="ash"><a href="">2020年11月下旬艺人收益退回名单</a>
+							<span>2020/12/15</span>
+							</li>
+							<li><a href="">酷次元--“虚拟头像”开播模式使用方式</a>
+							<span>2020/12/15</span>
+							</li>
+							<li class="ash"><a href="">直播学院百万基金计划申请规则</a>
+							<span>2020/12/08</span>
+							</li>
+							<li><a href="">酷狗搞笑主播底薪扶持政策</a>
+							<span>2020/12/04</span>
+							</li>
+							<li class="ash"><a href="">2020酷狗户外主播底薪扶持政策</a>
+							<span>2020/12/04</span>
+							</li>
+						</ul>
+					</div>
+					<!-- 右边文字 -->
+					<div class="notice_right">
+						<ul>
+							<li class="ash"><a href="">酷狗直播艺人违规处罚规则</a>
+							<span>2020/11/18</span>
+							</li>
+							<li><a href="">2020酷狗直播转/入/退会新规（Bate版）</a>
+							<span>2020/08/28</span>
+							</li>
+							<li class="ash"><a href="">酷狗小铺限售商品及违规管理规范</a>
+							<span>2020/07/29</span>
+							</li>
+							<li><a href="">酷狗直播公会入驻要求及流程</a>
+							<span>2020/04/30</span>
+							</li>
+							<li class="ash"><a href="">酷狗直播公会违规处罚规则</a>
+							<span>2020/04/30</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 热点问题 -->
+				<div class="small_three">
+					<h2>热点问题</h2>
+				</div>
+				<!-- 热点问题文字 -->
+				<div class="hotspot">
+					<!-- 左边 -->
+					<div class="hotspot_left">
+						<ul>
+							<li class="ash"><a href="">如何申请男神，女神标签？</a></li>
+							<li><a href="">游戏直播开播教程</a></li>
+							<li class="ash"><a href="">开播指引</a></li>
+							<li><a href="">什么是财富等级</a></li>
+							<li class="ash"><a href="">什么是明星等级</a></li>
+							<li><a href="">如何申请好声音标签</a></li>
+							<li class="ash"><a href="">如何申请歌手标签</a></li>
+							<li><a href="">如何成为独家主播？</a></li>
+							<li class="ash"><a href="">如何开公会</a></li>
+							<li><a href="">如何结算收益</a></li>
+						</ul>
+					</div>
+					<!-- 右边 -->
+					<div class="hotspot_right">
+						<ul>
+							<li class="ash"><a href="">酷狗认证标签</a></li>
+							<li><a href="">新主播有推荐位么？</a></li>
+							<li class="ash"><a href="">星币和星豆的常见问题</a></li>
+							<li><a href="">如何成为主播（通过网页端签约）</a></li>
+							<li class="ash"><a href="">标签链接大集合</a></li>
+							<li><a href="">酷狗直播伴侣的使用</a></li>
+							<li class="ash"><a href="">女神标签主播招募，短视频帮你单月涨粉过万！</a></li>
+							<li><a href="">双摄像头开播网络问题解决方案</a></li>
+							<li class="ash"><a href="">教你玩转才艺PK</a></li>
+							<li><a href="">艺人如何处理开播设备为空</a></li>
+						</ul>
+					</div>
+				</div>
+				
+		</section>
 		<!-- 底部文字 -->
 		<div class="bottom">
 			<div class="bottom_one">
-			<img src="../img/4.1.gif" >
+			<img src="img/4.1.gif" >
 			</div>
 			<div class="bottom_two">
 				<ul>
@@ -663,14 +667,13 @@
 			</div>
 			<div class="bottom_four">
 				<span class="a">
-					<img src="../img/4.2.png" >
+					<img src="img/4.2.png" >
 				</span>
 				<span class="b">
-					<img src="../img/4.3.png" >
+					<img src="img/4.3.png" >
 				</span>
 			</div>
 		</div>
-		
 		<script src="js/swiper-bundle.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			// $(document).ready(function(){
