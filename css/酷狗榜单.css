@@ -989,6 +989,258 @@ header>.big>.denglu>ul>li>a:hover{
 
 
 
+.secrtion>div>.ba{
+	width: 780px;
+	/* height: 500px; */
+	/* border: 1px solid black; */
+	/* float: right; */
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: none;
+}
+.secrtion>div>.ba>.top{
+	width: 780px;
+	height: 70px;
+	border-bottom: 1px dotted #cacaca;
+	float: left;
+}
+.secrtion>div>.ba>.top>h3{
+	float: left;
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: normal;
+}
+.secrtion>div>.ba>.top>span{
+	float: left;
+	margin-top: 18px;
+	margin-left: 20px;
+	color: #999999;
+}
+.secrtion>div>.ba>.top>p{
+	float: right;
+	padding: 8px 18px;
+	margin-top: 8px;
+	background:#169af3;
+	color: #fff;
+	border-radius: 3px 3px 3px 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.secrtion>div>.ba>.top>p:hover{
+	background: #158FE1;
+}
+.secrtion>div>.ba>.quanxuan{
+	height: 54px;
+	width: 780px;
+	/* background: red; */
+	float: left;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+.secrtion>div>.ba>.quanxuan>input{
+	float: left;
+	margin-top: 27px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.secrtion>div>.ba>.quanxuan>li{
+	list-style: none;
+	float: left;
+	margin-top: 27px;
+	margin-left: 5px;
+	font-size: 13px;
+}
+.secrtion>div>.ba>ol>li{
+	list-style: none;
+	width: 780px;
+	height: 54px;
+	border-bottom: 1px solid #eeeeee;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.secrtion>div>.ba>ol>li>input{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.secrtion>div>.ba>ol>li>h3{
+	font-weight: normal;
+	color: #b29999;
+	float: left;
+	margin-left: 10px;
+	margin-top: 16px;
+}
+.secrtion>div>.ba>ol>li>div{
+	float: left;
+	font-size: 15px;
+	margin-left: 15px;
+	margin-top: 18px;
+}
+.secrtion>div>.ba>ol>li>p{
+	float: right;
+	margin-top: 18px;
+	color: #a2999f;
+}
+.secrtion>div>.ba>ol>li>span{
+	float: right;
+	margin-top: 18px;
+	margin-right: 10px;
+	display: none;
+	color: #a2999f;
+}
+.secrtion>div>.ba>ol>li:hover{
+	background: rgba(238,238,238,0.5);
+}
+.secrtion>div>.ba>ol>li:hover>div{
+	color: #009AF3;
+}
+.secrtion>div>.ba>ol>li:hover>p{
+	color: #009AF3;
+}
+.secrtion>div>.ba>ol>li:hover>span{
+	display: block;
+}
+.secrtion>div>.ba>ol>li>span:hover{
+	color: #009AF3;
+}
+
+
+
+
+
+.secrtion>div>.bb{
+	width: 780px;
+	/* height: 500px; */
+	/* border: 1px solid black; */
+	/* float: right; */
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: none;
+}
+.secrtion>div>.bb>.top{
+	width: 780px;
+	height: 70px;
+	border-bottom: 1px dotted #cacaca;
+	float: left;
+}
+.secrtion>div>.bb>.top>h3{
+	float: left;
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: normal;
+}
+.secrtion>div>.bb>.top>span{
+	float: left;
+	margin-top: 18px;
+	margin-left: 20px;
+	color: #999999;
+}
+.secrtion>div>.bb>.top>p{
+	float: right;
+	padding: 8px 18px;
+	margin-top: 8px;
+	background:#169af3;
+	color: #fff;
+	border-radius: 3px 3px 3px 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.secrtion>div>.bb>.top>p:hover{
+	background: #158FE1;
+}
+.secrtion>div>.bb>.quanxuan{
+	height: 54px;
+	width: 780px;
+	/* background: red; */
+	float: left;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+.secrtion>div>.bb>.quanxuan>input{
+	float: left;
+	margin-top: 27px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.secrtion>div>.bb>.quanxuan>li{
+	list-style: none;
+	float: left;
+	margin-top: 27px;
+	margin-left: 5px;
+	font-size: 13px;
+}
+.secrtion>div>.bb>ol>li{
+	list-style: none;
+	width: 780px;
+	height: 54px;
+	border-bottom: 1px solid #eeeeee;
+	float: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.secrtion>div>.bb>ol>li>input{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.secrtion>div>.bb>ol>li>h3{
+	font-weight: normal;
+	color: #b29999;
+	float: left;
+	margin-left: 10px;
+	margin-top: 16px;
+}
+.secrtion>div>.bb>ol>li>div{
+	float: left;
+	font-size: 15px;
+	margin-left: 15px;
+	margin-top: 18px;
+}
+.secrtion>div>.bb>ol>li>p{
+	float: right;
+	margin-top: 18px;
+	color: #a2999f;
+}
+.secrtion>div>.bb>ol>li>span{
+	float: right;
+	margin-top: 18px;
+	margin-right: 10px;
+	display: none;
+	color: #a2999f;
+}
+.secrtion>div>.bb>ol>li:hover{
+	background: rgba(238,238,238,0.5);
+}
+.secrtion>div>.bb>ol>li:hover>div{
+	color: #009AF3;
+}
+.secrtion>div>.bb>ol>li:hover>p{
+	color: #009AF3;
+}
+.secrtion>div>.bb>ol>li:hover>span{
+	display: block;
+}
+.secrtion>div>.bb>ol>li>span:hover{
+	color: #009AF3;
+}
+
+
+
 
 
 
