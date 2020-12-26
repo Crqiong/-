@@ -1,4 +1,4 @@
-﻿*{
+*{
 	margin: 0px;
 	padding: 0px;
 }
@@ -154,7 +154,7 @@ container>.head>.head_nav>.right{
 }
 container>.head>.head_nav>.right>li{
 	list-style: none;
-	margin-left: 20px;
+	margin-left: 30px;
 	line-height: 50px;
 	font-size: 14px;
 }
@@ -172,69 +172,75 @@ container>.middle{
 	height: 445px;
 	min-width: 1000px;
 	position: relative;
-	/* background: lightblue; */
+	background: lightblue;
 }
 container>.middle>.imgs{
-	list-style: none;
-}
-container>.middle>.imgs>li{
-	width: 100%;
+	width:100%;
 	min-width: 1000px;
-	position: absolute;
-	display: none;
-	/* opacity: 0; */
-	transition: all 1s ;
-}
-container>.middle>.imgs>li>a{
-	width: 100%;
-	text-align: center;
+	height: 100%;
 	display: block;
-	line-height: 500px;
+	
+}
+container>.middle>.imgs>div{
+	height: 100%;
+	text-align: center;
+	transition: all .5s;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 container>.middle>.point{
 	position: absolute;
-	bottom: 100px;
+	bottom: 60px;
 	left: 50%;
 	transform: translate(-50%);
-	/* background: red; */
-}
-container>.middle>.point>.big_point>a{
-	width: 10px;
-	height: 10px;
-	margin-top: 3px;
-	background: white;
-}
-container>.middle>.point>li{
-	float: left;
 	list-style: none;
 }
-container>.middle>.point>li>a{
-	display: block;
-	height: 6px;
+container>.middle>.point>li{
 	width: 6px;
+	height: 6px;
+	cursor: pointer;
+	float: left;
+	margin: 0 10px;
 	border-radius: 50%;
-	background: #ccc;
-	margin: 5px 6px;
+	background-color: #ffffff;
+}
+container>.middle>.point>.big_point{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	position: relative;
+	top: -2px;
+}
+container>.middle>span{
+	position: absolute;
+	/* display: none; */
+	width: 60px;
+	height: 120px;
+	top: 50%;
+	margin-top: -60px;
+	background-image: url(../img/sprite.png	);
+	z-index: 1;
+	cursor: pointer;
+}
+container>.middle>.right{
+	transform:translate(-50%); 
+	left: 30px; 
+	background-position: 0 595px;
+}
+container>.middle>.left{
+	transform:translate(50%); 
+	right: 30px;
+	background-position: 0 220px;
 }
 container>.middle:hover>span{
 	display: inline-block;
 }
-container>.middle>span:hover{
-	background: rgba(0,0,0,0.5);
-	color: white;
+container>.middle>.right:hover{
+	background-position: 0 470px;
 }
-container>.middle>span{
-	width: 100px;
-	height: 50px;
-	top:50%;
-	background: rgba(200,200,200,0.3);
-	color: rgba(255,255,255,0.4);
-	position: absolute;
-	display: inline-block;
-	font-size: 40px;
-	line-height: 50px;
-	text-align: center;
-	display: none;
+container>.middle>.left:hover{
+	background-position: 0 345px;
 }
 
 /* 中部下载 */
@@ -876,17 +882,7 @@ container>.foot>.dowload>li>a:hover{
 .content>.link>a:hover{
 	color: #009AF3;
 }
-.backTop{
-	position: fixed;
-	z-index: 5;
-	bottom: 100px;
-	right: 100px;
-	height: 50px;
-	width: 50px;
-	background-image: url(../img/sprite.png);
-	background-position: 0 755px;
-	cursor: pointer;
-}
+
 
 
 
